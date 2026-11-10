@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "description": "Engagements between Imperial's central Research Software Engineering (RSE) team and departments. Every record carries a 'source' block: 'public' records are drawn from publicly available material and should be verified; 'mock' records are placeholders that illustrate the format and must be replaced with real data.",
+    "lastReviewed": "2026-11-10",
+    "team": {
+      "name": "Research Software Engineering team",
+      "parent": "Research Computing Service, ICT",
+      "url": "https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/"
+    }
+  },
+
+  "offeringTypes": [
+    { "id": "project", "label": "Collaborative project", "description": "Funded or costed software development work carried out with a research group." },
+    { "id": "code_surgery", "label": "Code surgery", "description": "Free 30-minute one-to-one consultations on research code (testing, packaging, optimisation and similar)." },
+    { "id": "training", "label": "Training & workshops", "description": "Courses and workshops delivered to researchers, including Graduate School and Carpentries-style sessions." },
+    { "id": "sprint", "label": "Hackathon / sprint", "description": "Short, intensive development sprints or hackathons on a specific codebase." },
+    { "id": "community", "label": "Community & outreach", "description": "Talks, community events, newsletters and Slack support within the Research Software Community." },
+    { "id": "programme", "label": "Experience programme", "description": "Placements and secondments such as the HPC and RSE Experience Programme." },
+    { "id": "open_source_booster", "label": "Open-source booster", "description": "Free, short (under two days) collaborations to maximise the impact of open-source software developed at Imperial." }
+  ],
+
+  "services": [
+    {
+      "id": "svc-code-surgeries",
+      "type": "code_surgery",
+      "name": "Code Surgeries",
+      "description": "Free 30-minute slots, available fortnightly, for any Imperial researcher who writes or maintains software: version control, testing, code architecture, continuous integration, code review, optimisation, packaging and publication. Booked at least a week ahead so the team can review the code first.",
+      "url": "https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/code-surgeries/",
+      "source": { "kind": "public", "ref": "https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/code-surgeries/" }
+    },
+    {
+      "id": "svc-open-source-booster",
+      "type": "open_source_booster",
+      "name": "Open-source booster",
+      "description": "Free, short (under two days) collaborations on open-source Imperial software, choosing one of: paper pre-submission assessment, software deployment (PyPI / conda-forge), documentation infrastructure, or a quality and performance audit. Applicants are listed in the Imperial Research Software Directory.",
+      "url": "https://imperialcollegelondon.github.io/rse_team_activities/osb.html",
+      "source": { "kind": "public", "ref": "https://imperialcollegelondon.github.io/rse_team_activities/osb.html" }
+    },
+    {
+      "id": "svc-projects",
+      "type": "project",
+      "name": "Collaborative projects",
+      "description": "Professional software development expertise provided to research projects, run under the team's standard operating procedure for project work.",
+      "url": "https://imperialcollegelondon.github.io/RSE_SOPs/SOP01_Project_Work.html",
+      "source": { "kind": "public", "ref": "https://imperialcollegelondon.github.io/RSE_SOPs/SOP01_Project_Work.html" }
+    },
+    {
+      "id": "svc-community",
+      "type": "community",
+      "name": "Research Software Community",
+      "description": "College-wide community of research software developers, supported by a Slack workspace and a regular newsletter.",
+      "url": "https://imperialcollegelondon.github.io/rs-community-newsletters/2026-01.html",
+      "source": { "kind": "public", "ref": "https://imperialcollegelondon.github.io/rs-community-newsletters/2026-01.html" }
+    },
+    {
+      "id": "svc-experience-programme",
+      "type": "programme",
+      "name": "HPC and RSE Experience Programme",
+      "description": "Programme giving researchers hands-on experience of high-performance computing and research software engineering alongside the team.",
+      "url": "https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/about-the-team",
+      "source": { "kind": "public", "ref": "https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/about-the-team" }
+    },
+    {
+      "id": "svc-training",
+      "type": "training",
+      "name": "Training",
+      "description": "Training in research software engineering practice for researchers and research students.",
+      "url": "https://imperial.ac.uk/a-z-research/research-software-engineering",
+      "source": { "kind": "public", "ref": "https://imperial.ac.uk/a-z-research/research-software-engineering" }
+    }
+  ],
+
+  "activities": [
+    {
+      "id": "strainmap",
+      "title": "StrainMap",
+      "type": "project",
+      "departments": ["nhli"],
+      "summary": "Software to prepare a new diagnostic cardiac MRI technique for use in clinical settings.",
+      "source": { "kind": "public", "ref": "https://blogs.imperial.ac.uk/ict-success-stories/page/4", "confidence": "medium", "note": "Project confirmed as RSE work; department attribution inferred from the cardiac MRI subject area." }
+    },
+    {
+      "id": "liionsden",
+      "title": "Liionsden",
+      "type": "project",
+      "departments": ["mechanical-engineering"],
+      "summary": "A tool to archive and visualise experimental and simulation data from battery research.",
+      "source": { "kind": "public", "ref": "https://blogs.imperial.ac.uk/ict-success-stories/page/4", "confidence": "low", "note": "Project confirmed as RSE work; department attribution is a best guess and needs checking." }
+    },
+    {
+      "id": "udales-sprint-2024",
+      "title": "uDALES development sprint",
+      "type": "sprint",
+      "departments": ["civil-environmental-engineering"],
+      "start": "2024-08",
+      "end": "2024-08",
+      "status": "completed",
+      "summary": "Development sprint on uDALES, an open-source large-eddy simulation code for urban microclimate and turbulent flow.",
+      "url": "https://github.com/uDALES/u-dales",
+      "source": { "kind": "public", "ref": "https://imperialcollegelondon.github.io/rs-community-newsletters/", "confidence": "medium", "note": "Sprint reported in the Research Software Community newsletter (exact issue to be linked); department attribution inferred from the code's home group." }
+    },
+    {
+      "id": "finesse",
+      "title": "FINESSE spectrometer control software",
+      "type": "project",
+      "departments": ["physics"],
+      "summary": "Control and data-acquisition software for the FINESSE far-infrared spectrometer.",
+      "url": "https://github.com/ImperialCollegeLondon/FINESSE",
+      "source": { "kind": "public", "ref": "https://github.com/ImperialCollegeLondon/FINESSE", "confidence": "medium", "note": "Repository is public; dates and status not yet recorded." }
+    },
+
+    { "id": "mock-cs-physics-2526", "title": "Code surgeries 2025/26", "type": "code_surgery", "departments": ["physics"], "start": "2025-08", "end": "2026-07", "status": "completed", "sessions": 9, "summary": "Consultations on test suites, packaging and GPU profiling.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-chemistry-2526", "title": "Code surgeries 2025/26", "type": "code_surgery", "departments": ["chemistry"], "start": "2025-08", "end": "2026-07", "status": "completed", "sessions": 5, "summary": "Consultations on reproducible environments and continuous integration.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-life-sciences-2526", "title": "Code surgeries 2025/26", "type": "code_surgery", "departments": ["life-sciences"], "start": "2025-08", "end": "2026-07", "status": "completed", "sessions": 7, "summary": "Consultations on bioinformatics pipelines and workflow managers.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-computing-2627", "title": "Code surgeries 2026/27", "type": "code_surgery", "departments": ["computing"], "start": "2026-08", "status": "active", "sessions": 3, "summary": "Consultations on research prototypes moving towards maintained libraries.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-brain-sciences-2627", "title": "Code surgeries 2026/27", "type": "code_surgery", "departments": ["brain-sciences"], "start": "2026-08", "status": "active", "sessions": 4, "summary": "Consultations on neuroimaging analysis code and data management.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-public-health-2526", "title": "Code surgeries 2025/26", "type": "code_surgery", "departments": ["public-health"], "start": "2025-08", "end": "2026-07", "status": "completed", "sessions": 6, "summary": "Consultations on R package structure and model performance.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-aeronautics-2526", "title": "Code surgeries 2025/26", "type": "code_surgery", "departments": ["aeronautics"], "start": "2025-08", "end": "2026-07", "status": "completed", "sessions": 2, "summary": "Consultations on Fortran modernisation and build systems.", "source": { "kind": "mock" } },
+    { "id": "mock-cs-ese-2627", "title": "Code surgeries 2026/27", "type": "code_surgery", "departments": ["earth-science-engineering"], "start": "2026-08", "status": "active", "sessions": 2, "summary": "Consultations on geospatial data tooling.", "source": { "kind": "mock" } },
+
+    { "id": "mock-proj-climate-dashboard", "title": "Climate risk dashboard", "type": "project", "departments": ["grantham", "environmental-policy"], "start": "2025-03", "end": "2026-02", "status": "completed", "summary": "Web front end for exploring climate risk scenarios.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-epi-model", "title": "Epidemic model refactor", "type": "project", "departments": ["public-health", "infectious-disease"], "start": "2026-01", "status": "active", "summary": "Restructuring a transmission model into a tested, documented package.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-materials-db", "title": "Materials characterisation database", "type": "project", "departments": ["materials"], "start": "2024-10", "end": "2025-09", "status": "completed", "summary": "Database and API for microscopy and spectroscopy metadata.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-surgical-video", "title": "Surgical video annotation tool", "type": "project", "departments": ["surgery-cancer", "computing"], "start": "2026-04", "status": "active", "summary": "Annotation interface and pipeline for surgical video datasets.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-energy-model", "title": "Energy system model performance", "type": "project", "departments": ["chemical-engineering", "energy-futures-lab"], "start": "2025-06", "end": "2026-03", "status": "completed", "summary": "Profiling and parallelising a national-scale energy system model.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-genomics-pipeline", "title": "Genomics pipeline hardening", "type": "project", "departments": ["life-sciences", "metabolism-digestion-reproduction"], "start": "2026-09", "status": "planned", "summary": "Containerising and testing a variant-calling workflow for HPC.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-robotics-sim", "title": "Robotics simulation framework", "type": "project", "departments": ["mechanical-engineering", "design-engineering"], "start": "2025-11", "status": "active", "summary": "Plugin architecture for a soft-robotics simulator.", "source": { "kind": "mock" } },
+    { "id": "mock-proj-finance-backtest", "title": "Back-testing library", "type": "project", "departments": ["finance"], "start": "2026-02", "status": "active", "summary": "Open-source library for reproducible portfolio back-testing.", "source": { "kind": "mock" } },
+
+    { "id": "mock-train-python-dtp", "title": "Introduction to Python for researchers", "type": "training", "departments": ["life-sciences", "chemistry", "physics"], "start": "2025-10", "end": "2025-10", "status": "completed", "summary": "Two-day introductory course for doctoral students.", "source": { "kind": "mock" } },
+    { "id": "mock-train-rse-practices", "title": "Research software engineering practices", "type": "training", "departments": ["mathematics", "computing", "aeronautics"], "start": "2026-02", "end": "2026-03", "status": "completed", "summary": "Testing, version control and packaging workshop series.", "source": { "kind": "mock" } },
+
+    { "id": "mock-sprint-pde-solver", "title": "PDE solver hackathon", "type": "sprint", "departments": ["mathematics", "earth-science-engineering"], "start": "2025-07", "end": "2025-07", "status": "completed", "summary": "Week-long sprint adding adjoint support to a finite-element solver.", "source": { "kind": "mock" } },
+
+    { "id": "mock-comm-ghi-network", "title": "Digital health software network", "type": "community", "departments": ["global-health-innovation", "surgery-cancer"], "start": "2025-09", "status": "active", "summary": "Termly meet-up for developers of digital health tools.", "source": { "kind": "mock" } },
+
+    { "id": "mock-osb-docs-chemistry", "title": "Open-source booster: documentation infrastructure", "type": "open_source_booster", "departments": ["chemistry"], "start": "2026-05", "end": "2026-05", "status": "completed", "summary": "Sphinx documentation built and deployed to Read the Docs, with training for the maintainers.", "source": { "kind": "mock" } },
+    { "id": "mock-osb-deploy-mathematics", "title": "Open-source booster: software deployment", "type": "open_source_booster", "departments": ["mathematics"], "start": "2026-10", "status": "active", "summary": "Automated release pipeline publishing wheels to PyPI and a conda-forge feedstock.", "source": { "kind": "mock" } },
+    { "id": "mock-prog-physics-placement", "title": "Experience programme placement", "type": "programme", "departments": ["physics"], "start": "2026-01", "end": "2026-06", "status": "completed", "summary": "Researcher embedded with the team for six months.", "source": { "kind": "mock" } },
+    { "id": "mock-prog-civil-placement", "title": "Experience programme placement", "type": "programme", "departments": ["civil-environmental-engineering"], "start": "2026-10", "status": "active", "summary": "Researcher embedded with the team working on hydrological model tooling.", "source": { "kind": "mock" } }
+  ]
+}

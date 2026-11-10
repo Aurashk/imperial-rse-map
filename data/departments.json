@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "description": "Organisational units of Imperial College London shown on the map. Faculties (and a cross-faculty institutes group) are drawn as containers; departments are the nodes inside them.",
+    "lastReviewed": "2026-11-10",
+    "provenance": "Compiled from Imperial's publicly listed faculty and department structure. Not yet checked against the live 'Faculties and departments' page (https://www.imperial.ac.uk/a_to_z) – entries marked \"verify\": true need confirming.",
+    "notes": [
+      "Department URLs follow Imperial's standard www.imperial.ac.uk/<department>/ pattern and should be spot-checked.",
+      "The School of Public Health is listed under the Faculty of Medicine; some internal listings group it differently, so it is marked for verification.",
+      "Imperial Business School is split into its academic departments so that activity can be attributed at the same granularity as other faculties."
+    ]
+  },
+  "groups": [
+    { "id": "engineering", "name": "Faculty of Engineering", "shortName": "Engineering", "kind": "faculty" },
+    { "id": "natural-sciences", "name": "Faculty of Natural Sciences", "shortName": "Natural Sciences", "kind": "faculty" },
+    { "id": "medicine", "name": "Faculty of Medicine", "shortName": "Medicine", "kind": "faculty" },
+    { "id": "business", "name": "Imperial Business School", "shortName": "Business School", "kind": "faculty" },
+    { "id": "institutes", "name": "Cross-faculty institutes", "shortName": "Institutes", "kind": "institutes" }
+  ],
+  "departments": [
+    { "id": "aeronautics", "name": "Department of Aeronautics", "shortName": "Aeronautics", "group": "engineering", "url": "https://www.imperial.ac.uk/aeronautics/" },
+    { "id": "bioengineering", "name": "Department of Bioengineering", "shortName": "Bioengineering", "group": "engineering", "url": "https://www.imperial.ac.uk/bioengineering/" },
+    { "id": "chemical-engineering", "name": "Department of Chemical Engineering", "shortName": "Chemical Eng.", "group": "engineering", "url": "https://www.imperial.ac.uk/chemical-engineering/" },
+    { "id": "civil-environmental-engineering", "name": "Department of Civil and Environmental Engineering", "shortName": "Civil & Env. Eng.", "group": "engineering", "url": "https://www.imperial.ac.uk/civil-engineering/" },
+    { "id": "computing", "name": "Department of Computing", "shortName": "Computing", "group": "engineering", "url": "https://www.imperial.ac.uk/computing/" },
+    { "id": "design-engineering", "name": "Dyson School of Design Engineering", "shortName": "Design Eng.", "group": "engineering", "url": "https://www.imperial.ac.uk/design-engineering/" },
+    { "id": "earth-science-engineering", "name": "Department of Earth Science and Engineering", "shortName": "Earth Sci. & Eng.", "group": "engineering", "url": "https://www.imperial.ac.uk/earth-science/" },
+    { "id": "electrical-electronic-engineering", "name": "Department of Electrical and Electronic Engineering", "shortName": "EEE", "group": "engineering", "url": "https://www.imperial.ac.uk/electrical-engineering/" },
+    { "id": "materials", "name": "Department of Materials", "shortName": "Materials", "group": "engineering", "url": "https://www.imperial.ac.uk/materials/" },
+    { "id": "mechanical-engineering", "name": "Department of Mechanical Engineering", "shortName": "Mechanical Eng.", "group": "engineering", "url": "https://www.imperial.ac.uk/mechanical-engineering/" },
+
+    { "id": "chemistry", "name": "Department of Chemistry", "shortName": "Chemistry", "group": "natural-sciences", "url": "https://www.imperial.ac.uk/chemistry/" },
+    { "id": "life-sciences", "name": "Department of Life Sciences", "shortName": "Life Sciences", "group": "natural-sciences", "url": "https://www.imperial.ac.uk/life-sciences/" },
+    { "id": "mathematics", "name": "Department of Mathematics", "shortName": "Mathematics", "group": "natural-sciences", "url": "https://www.imperial.ac.uk/mathematics/" },
+    { "id": "physics", "name": "Department of Physics", "shortName": "Physics", "group": "natural-sciences", "url": "https://www.imperial.ac.uk/physics/" },
+    { "id": "environmental-policy", "name": "Centre for Environmental Policy", "shortName": "Env. Policy", "group": "natural-sciences", "url": "https://www.imperial.ac.uk/environmental-policy/" },
+
+    { "id": "brain-sciences", "name": "Department of Brain Sciences", "shortName": "Brain Sciences", "group": "medicine", "url": "https://www.imperial.ac.uk/brain-sciences/" },
+    { "id": "immunology-inflammation", "name": "Department of Immunology and Inflammation", "shortName": "Immunology", "group": "medicine", "url": "https://www.imperial.ac.uk/immunology-inflammation/" },
+    { "id": "infectious-disease", "name": "Department of Infectious Disease", "shortName": "Infectious Disease", "group": "medicine", "url": "https://www.imperial.ac.uk/infectious-disease/" },
+    { "id": "metabolism-digestion-reproduction", "name": "Department of Metabolism, Digestion and Reproduction", "shortName": "Metabolism", "group": "medicine", "url": "https://www.imperial.ac.uk/metabolism-digestion-reproduction/" },
+    { "id": "surgery-cancer", "name": "Department of Surgery and Cancer", "shortName": "Surgery & Cancer", "group": "medicine", "url": "https://www.imperial.ac.uk/surgery-cancer/" },
+    { "id": "nhli", "name": "National Heart and Lung Institute", "shortName": "NHLI", "group": "medicine", "url": "https://www.imperial.ac.uk/nhli/" },
+    { "id": "public-health", "name": "School of Public Health", "shortName": "Public Health", "group": "medicine", "url": "https://www.imperial.ac.uk/school-public-health/", "verify": true },
+    { "id": "clinical-sciences", "name": "Institute of Clinical Sciences", "shortName": "Clinical Sciences", "group": "medicine", "url": "https://www.imperial.ac.uk/institute-of-clinical-sciences/", "verify": true },
+
+    { "id": "finance", "name": "Department of Finance", "shortName": "Finance", "group": "business", "url": "https://www.imperial.ac.uk/business-school/" },
+    { "id": "management-entrepreneurship", "name": "Department of Management and Entrepreneurship", "shortName": "Mgmt & Entrepreneurship", "group": "business", "url": "https://www.imperial.ac.uk/business-school/" },
+    { "id": "economics-public-policy", "name": "Department of Economics and Public Policy", "shortName": "Econ. & Public Policy", "group": "business", "url": "https://www.imperial.ac.uk/business-school/" },
+    { "id": "analytics-marketing-operations", "name": "Department of Analytics, Marketing and Operations", "shortName": "Analytics & Ops", "group": "business", "url": "https://www.imperial.ac.uk/business-school/", "verify": true },
+
+    { "id": "grantham", "name": "Grantham Institute – Climate Change and the Environment", "shortName": "Grantham", "group": "institutes", "url": "https://www.imperial.ac.uk/grantham/" },
+    { "id": "data-science-institute", "name": "Data Science Institute", "shortName": "Data Science Inst.", "group": "institutes", "url": "https://www.imperial.ac.uk/data-science/" },
+    { "id": "global-health-innovation", "name": "Institute of Global Health Innovation", "shortName": "Global Health Inn.", "group": "institutes", "url": "https://www.imperial.ac.uk/global-health-innovation/" },
+    { "id": "energy-futures-lab", "name": "Energy Futures Lab", "shortName": "Energy Futures Lab", "group": "institutes", "url": "https://www.imperial.ac.uk/energy-futures-lab/" },
+    { "id": "i-x", "name": "I-X", "shortName": "I-X", "group": "institutes", "verify": true }
+  ]
+}

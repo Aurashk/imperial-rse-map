@@ -1,0 +1,669 @@
+/*
+ * Imperial RSE Map – styles.
+ *
+ * Colours are defined once as custom properties and redefined for dark mode,
+ * both for the operating-system preference and for an explicit
+ * data-theme attribute set by the theme toggle (which always wins).
+ * The graph reads the --type-* and --graph-* tokens at runtime, so changing
+ * a value here recolours the network as well as the HTML.
+ */
+
+:root {
+  color-scheme: light;
+
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-raised: #ffffff;
+  --ink: #0b0b0b;
+  --ink-secondary: #52514e;
+  --ink-muted: #6f6d68;
+  --hairline: #e1e0d9;
+  --border: rgba(11, 11, 11, 0.12);
+  --accent: #0b3d91;
+  --focus: #2a78d6;
+
+  /* Categorical slots, fixed order (validated for colour-vision deficiency). */
+  --type-project: #2a78d6;
+  --type-code_surgery: #eb6834;
+  --type-training: #1baf7a;
+  --type-sprint: #eda100;
+  --type-community: #e87ba4;
+  --type-programme: #008300;
+  --type-open_source_booster: #6250d6;
+
+  /* Sequential ramp (single hue, light to dark) for research-software counts. */
+  --seq-1: #86b6ef;
+  --seq-2: #5598e7;
+  --seq-3: #2a78d6;
+  --seq-4: #1c5cab;
+  --seq-5: #104281;
+
+  /* Graph chrome. */
+  --graph-node-idle: #d9d8d1;
+  --graph-node-idle-border: #b8b6ad;
+  --graph-group-fill: #f1f0eb;
+  --graph-group-border: #d6d4cc;
+  --graph-edge: #b8b6ad;
+  --graph-hub: #0b3d91;
+  --graph-label: #2b2a28;
+  --graph-label-halo: #fcfcfb;
+
+  --mock-badge-bg: #f3e8c8;
+  --mock-badge-ink: #5c4600;
+  --public-badge-bg: #dcebfb;
+  --public-badge-ink: #123e72;
+
+  --radius: 8px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-raised: #222220;
+    --ink: #f0efec;
+    --ink-secondary: #c3c2b7;
+    --ink-muted: #a3a198;
+    --hairline: #2c2c2a;
+    --border: rgba(255, 255, 255, 0.12);
+    --accent: #86b6ef;
+    --focus: #3987e5;
+
+    --type-project: #3987e5;
+    --type-code_surgery: #d95926;
+    --type-training: #199e70;
+    --type-sprint: #c98500;
+    --type-community: #d55181;
+    --type-programme: #008300;
+    --type-open_source_booster: #9085e9;
+
+    --seq-1: #184f95;
+    --seq-2: #256abf;
+    --seq-3: #3987e5;
+    --seq-4: #6da7ec;
+    --seq-5: #9ec5f4;
+
+    --graph-node-idle: #3a3a37;
+    --graph-node-idle-border: #55544f;
+    --graph-group-fill: #20201e;
+    --graph-group-border: #383835;
+    --graph-edge: #55544f;
+    --graph-hub: #86b6ef;
+    --graph-label: #e4e3de;
+    --graph-label-halo: #1a1a19;
+
+    --mock-badge-bg: #4a3b10;
+    --mock-badge-ink: #f5dd9a;
+    --public-badge-bg: #173659;
+    --public-badge-ink: #cde2fb;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-raised: #222220;
+  --ink: #f0efec;
+  --ink-secondary: #c3c2b7;
+  --ink-muted: #a3a198;
+  --hairline: #2c2c2a;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #86b6ef;
+  --focus: #3987e5;
+
+  --type-project: #3987e5;
+  --type-code_surgery: #d95926;
+  --type-training: #199e70;
+  --type-sprint: #c98500;
+  --type-community: #d55181;
+  --type-programme: #008300;
+  --type-open_source_booster: #9085e9;
+
+  --seq-1: #184f95;
+  --seq-2: #256abf;
+  --seq-3: #3987e5;
+  --seq-4: #6da7ec;
+  --seq-5: #9ec5f4;
+
+  --graph-node-idle: #3a3a37;
+  --graph-node-idle-border: #55544f;
+  --graph-group-fill: #20201e;
+  --graph-group-border: #383835;
+  --graph-edge: #55544f;
+  --graph-hub: #86b6ef;
+  --graph-label: #e4e3de;
+  --graph-label-halo: #1a1a19;
+
+  --mock-badge-bg: #4a3b10;
+  --mock-badge-ink: #f5dd9a;
+  --public-badge-bg: #173659;
+  --public-badge-ink: #cde2fb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ensure the hidden attribute always wins over component display rules. */
+[hidden] {
+  display: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--page);
+  color: var(--ink);
+  font: 14px/1.45 var(--font);
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Header and controls ---------- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px 10px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 2px 0 0;
+  color: var(--ink-secondary);
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--surface);
+}
+
+.btn[aria-pressed="true"] {
+  border-color: var(--focus);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px 12px;
+}
+
+.control-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.control-group legend {
+  float: left;
+  margin-right: 8px;
+  padding: 5px 0;
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+/* Offering chips double as the colour legend and as filters. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chip .swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.chip .count {
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip[aria-pressed="false"] {
+  opacity: 0.45;
+}
+
+.chip[aria-pressed="false"] .swatch {
+  background: transparent !important;
+  box-shadow: inset 0 0 0 2px var(--ink-muted);
+}
+
+.software-legend {
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.software-legend .legend-title {
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+.ramp {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.ramp span {
+  width: 28px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.ramp-labels {
+  display: inline-flex;
+  gap: 8px;
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+.legend-note {
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px 16px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--ink-secondary);
+  font-size: 12px;
+}
+
+.control select,
+.control input {
+  font: 14px var(--font);
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  min-width: 140px;
+}
+
+.control.search input {
+  min-width: 220px;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+/* ---------- Main layout ---------- */
+
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 12px;
+  padding: 0 20px 12px;
+  min-height: 560px;
+}
+
+.stage {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+#graph {
+  position: absolute;
+  inset: 0;
+}
+
+.status-message {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+  color: var(--ink-secondary);
+  background: var(--surface);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  max-width: 280px;
+  padding: 8px 10px;
+  background: var(--surface-raised);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+}
+
+.tooltip strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.tooltip ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltip li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Side panel ---------- */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  overflow-y: auto;
+  max-height: calc(100vh - 210px);
+  min-height: 560px;
+}
+
+.panel h2 {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+
+.panel h3 {
+  margin: 18px 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-secondary);
+}
+
+.panel .meta {
+  margin: 0 0 8px;
+  color: var(--ink-secondary);
+}
+
+.panel .back {
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.stat {
+  padding: 8px 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+}
+
+.stat .value {
+  display: block;
+  font-size: 22px;
+  font-weight: 650;
+}
+
+.stat .label {
+  color: var(--ink-secondary);
+  font-size: 12px;
+}
+
+.item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  padding: 10px 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.item:first-child {
+  border-top: 0;
+}
+
+.item-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.item-title .swatch {
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.item-title button {
+  all: unset;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.item-title button:hover,
+.item-title button:focus-visible {
+  text-decoration: underline;
+}
+
+.item-body {
+  margin: 4px 0 0 18px;
+  color: var(--ink-secondary);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0 0 18px;
+}
+
+.tag {
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  background: var(--hairline);
+  color: var(--ink-secondary);
+}
+
+.tag.mock {
+  background: var(--mock-badge-bg);
+  color: var(--mock-badge-ink);
+  font-weight: 600;
+}
+
+.tag.public {
+  background: var(--public-badge-bg);
+  color: var(--public-badge-ink);
+}
+
+.dept-link {
+  all: unset;
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.notice {
+  margin: 10px 0;
+  padding: 8px 10px;
+  border-left: 3px solid var(--type-sprint);
+  background: var(--page);
+  color: var(--ink-secondary);
+  font-size: 13px;
+}
+
+/* ---------- Table view ---------- */
+
+.table-view {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  padding: 12px;
+  background: var(--surface);
+}
+
+.table-view table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.table-view th,
+.table-view td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--hairline);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.table-view th:first-child,
+.table-view td:first-child,
+.table-view th:nth-child(2),
+.table-view td:nth-child(2) {
+  text-align: left;
+}
+
+.table-view th {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+.table-view tbody tr:hover {
+  background: var(--page);
+  cursor: pointer;
+}
+
+.table-view td.zero {
+  color: var(--ink-muted);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 20px 14px;
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 900px) {
+  .topbar,
+  .controls,
+  .layout,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stage {
+    min-height: 480px;
+  }
+
+  .panel {
+    max-height: none;
+    min-height: 0;
+  }
+
+  .control,
+  .control select,
+  .control input,
+  .control.search input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .control-row > .control {
+    flex: 1 1 140px;
+  }
+}

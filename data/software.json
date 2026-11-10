@@ -1,0 +1,3856 @@
+{
+  "meta": {
+    "description": "Research software developed at Imperial, from the Imperial Research Software Directory. Inclusion does not imply central RSE team involvement.",
+    "source": "https://github.com/ImperialCollegeLondon/research-software-directory",
+    "generated": "2026-11-10",
+    "attributionNote": "Departments are inferred from the owning GitHub account or group using data/software-attributions.json and should be verified."
+  },
+  "software": [
+    {
+      "id": "uk-digital-heart-project--4dsegment",
+      "name": "4Dsegment",
+      "repo": "https://github.com/UK-Digital-Heart-Project/4Dsegment",
+      "owner": "UK-Digital-Heart-Project",
+      "description": null,
+      "language": "Python",
+      "topics": [],
+      "stars": 27,
+      "lastPush": "2020-04-01",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.2602751",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "clinical-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "UK Digital Heart Project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "uk-digital-heart-project--4dsurvival",
+      "name": "4Dsurvival",
+      "repo": "https://github.com/UK-Digital-Heart-Project/4Dsurvival",
+      "owner": "UK-Digital-Heart-Project",
+      "description": "Deep learning cardiac motion analysis for survival prediction",
+      "language": "Python",
+      "topics": [],
+      "stars": 82,
+      "lastPush": "2023-01-30",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "clinical-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "UK Digital Heart Project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--adam",
+      "name": "adam",
+      "repo": "https://github.com/ImperialCollegeLondon/adam",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1093/bioinformatics/bts644",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": false,
+      "attribution": {
+        "group": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "kaixhin--atari",
+      "name": "Atari",
+      "repo": "https://github.com/Kaixhin/Atari",
+      "owner": "Kaixhin",
+      "description": "Persistent advantage learning dueling double DQN for the Arcade Learning Environment",
+      "language": "Lua",
+      "topics": [
+        "deep-learning",
+        "deep-reinforcement-learning"
+      ],
+      "stars": 263,
+      "lastPush": "2018-02-08",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "kaixhin--autoencoders",
+      "name": "Autoencoders",
+      "repo": "https://github.com/Kaixhin/Autoencoders",
+      "owner": "Kaixhin",
+      "description": "Torch implementations of various types of autoencoders",
+      "language": "Lua",
+      "topics": [
+        "autoencoder",
+        "deep-learning"
+      ],
+      "stars": 474,
+      "lastPush": "2017-08-28",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "juliamatrices--bandedmatrices-jl",
+      "name": "BandedMatrices.jl",
+      "repo": "https://github.com/JuliaMatrices/BandedMatrices.jl",
+      "owner": "JuliaMatrices",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2022-02",
+      "metadataAvailable": false,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "pawni--bayesbyhypernet",
+      "name": "BayesByHypernet",
+      "repo": "https://github.com/pawni/BayesByHypernet",
+      "owner": "pawni",
+      "description": "Code for the paper Implicit Weight Uncertainty in Neural Networks",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "bayesian-neural-networks",
+        "deep-learning",
+        "deep-neural-networks",
+        "tensorflow",
+        "variational-inference"
+      ],
+      "stars": 66,
+      "lastPush": "2019-11-14",
+      "archived": false,
+      "inactive": true,
+      "doi": "10044/1/54603",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "saphir746--biobankread-bash",
+      "name": "BiobankRead-Bash",
+      "repo": "https://github.com/saphir746/BiobankRead-Bash",
+      "owner": "saphir746",
+      "description": "Python scripts to extract and pre-process UKB data ",
+      "language": "Python",
+      "topics": [],
+      "stars": 1,
+      "lastPush": "2025-07-09",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.802265",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "UK Biobank analysis",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "biomedia-mira--blast-ct",
+      "name": "blast-ct",
+      "repo": "https://github.com/biomedia-mira/blast-ct",
+      "owner": "biomedia-mira",
+      "description": "Brain Lesion Analysis and Segmentation Tool for Computed Tomography",
+      "language": "Python",
+      "topics": [],
+      "stars": 79,
+      "lastPush": "2026-07-05",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5281/zenodo.3746088",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "juliaarrays--blockarrays-jl",
+      "name": "BlockArrays.jl",
+      "repo": "https://github.com/JuliaArrays/BlockArrays.jl",
+      "owner": "JuliaArrays",
+      "description": "BlockArrays for Julia",
+      "language": "Julia",
+      "topics": [
+        "arrays",
+        "blockarrays",
+        "julia",
+        "matrix"
+      ],
+      "stars": 257,
+      "lastPush": "2026-11-03",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "http://juliaarrays.github.io/BlockArrays.jl/",
+      "featuredMonth": "2022-02",
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "juliamatrices--blockbandedmatrices-jl",
+      "name": "BlockBandedMatrices.jl",
+      "repo": "https://github.com/JuliaMatrices/BlockBandedMatrices.jl",
+      "owner": "JuliaMatrices",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2022-02",
+      "metadataAvailable": false,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "brian-team--brian2",
+      "name": "brian2",
+      "repo": "https://github.com/brian-team/brian2",
+      "owner": "brian-team",
+      "description": "Brian is a free, open source simulator for spiking neural networks. ",
+      "language": "Python",
+      "topics": [
+        "biological-simulations",
+        "brian",
+        "brian2",
+        "code-generation",
+        "computational-neuroscience",
+        "differential-equations",
+        "neuroscience",
+        "python",
+        "science",
+        "simulation-framework",
+        "spiking-neural-networks"
+      ],
+      "stars": 1257,
+      "lastPush": "2026-11-09",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "http://briansimulator.org",
+      "featuredMonth": "2020-06",
+      "metadataAvailable": true,
+      "departments": [
+        "electrical-electronic-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Neural Reckoning group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "wmd-group--carriercapture-jl",
+      "name": "CarrierCapture.jl",
+      "repo": "https://github.com/WMD-group/CarrierCapture.jl",
+      "owner": "WMD-group",
+      "description": "Julia package to compute trap-assisted electron and hole capture in semiconductors",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "defects",
+        "electronic-structure",
+        "materials-design",
+        "semiconductors",
+        "solar-cells"
+      ],
+      "stars": 61,
+      "lastPush": "2026-08-27",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5281/zenodo.2621017",
+      "homepage": "https://wmd-group.github.io/CarrierCapture.jl",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--cinterpolate",
+      "name": "cinterpolate",
+      "repo": "https://github.com/mrc-ide/cinterpolate",
+      "owner": "mrc-ide",
+      "description": ":bar_chart::arrow_right::wavy_dash: Interpolating functions from C, in R",
+      "language": "C",
+      "topics": [
+        "infrastructure"
+      ],
+      "stars": 8,
+      "lastPush": "2024-09-17",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/cinterpolate",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--covid-sim",
+      "name": "covid-sim",
+      "repo": "https://github.com/mrc-ide/covid-sim",
+      "owner": "mrc-ide",
+      "description": "This is the COVID-19 CovidSim microsimulation model developed by the MRC Centre for Global Infectious Disease Analysis hosted at Imperial College, London.",
+      "language": "C++",
+      "topics": [],
+      "stars": 1232,
+      "lastPush": "2023-02-21",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.25561/77482",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--covid19-forecasts-orderly",
+      "name": "covid19-forecasts-orderly",
+      "repo": "https://github.com/mrc-ide/covid19-forecasts-orderly",
+      "owner": "mrc-ide",
+      "description": null,
+      "language": "R",
+      "topics": [],
+      "stars": 29,
+      "lastPush": "2026-05-06",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/covid19-short-term-forecasts/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--covid19model",
+      "name": "covid19model",
+      "repo": "https://github.com/ImperialCollegeLondon/covid19model",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.25561/77731",
+      "homepage": "https://mrc-ide.github.io/covid19estimates/",
+      "featuredMonth": "2020-04",
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "crompulence--cpl-library",
+      "name": "cpl-library",
+      "repo": "https://github.com/Crompulence/cpl-library",
+      "owner": "Crompulence",
+      "description": null,
+      "language": "C++",
+      "topics": [],
+      "stars": 25,
+      "lastPush": "2023-12-08",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.56208",
+      "homepage": "http://www.cpl-library.org",
+      "featuredMonth": "2019-11",
+      "metadataAvailable": true,
+      "departments": [
+        "mechanical-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Coupled molecular–continuum simulation",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "lsds--crossbow",
+      "name": "Crossbow",
+      "repo": "https://github.com/lsds/Crossbow",
+      "owner": "lsds",
+      "description": "Crossbow: A Multi-GPU Deep Learning System for Training with Small Batch Sizes",
+      "language": "Java",
+      "topics": [
+        "deep-learning",
+        "gpu-acceleration",
+        "machine-learning",
+        "training"
+      ],
+      "stars": 57,
+      "lastPush": "2022-10-05",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.14778/3342263.3342276",
+      "homepage": "https://lsds.doc.ic.ac.uk/projects/crossbow",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ropensci--cyphr",
+      "name": "cyphr",
+      "repo": "https://github.com/ropensci/cyphr",
+      "owner": "ropensci",
+      "description": ":shipit: Humane encryption",
+      "language": "R",
+      "topics": [
+        "encryption",
+        "openssl",
+        "peer-reviewed",
+        "r",
+        "r-package",
+        "rstats",
+        "sodium"
+      ],
+      "stars": 98,
+      "lastPush": "2025-09-09",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://docs.ropensci.org/cyphr",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mofanv--darknetz",
+      "name": "darknetz",
+      "repo": "https://github.com/mofanv/darknetz",
+      "owner": "mofanv",
+      "description": "runs several layers of a deep learning model in TrustZone",
+      "language": "C",
+      "topics": [],
+      "stars": 95,
+      "lastPush": "2024-08-08",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Systems and networking",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mrc-ide--dde",
+      "name": "dde",
+      "repo": "https://github.com/mrc-ide/dde",
+      "owner": "mrc-ide",
+      "description": ":clock1130::soon::clock9: Delay differential equation solver",
+      "language": "R",
+      "topics": [],
+      "stars": 18,
+      "lastPush": "2024-09-23",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/dde",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "jczarnowski--deepfactors",
+      "name": "DeepFactors",
+      "repo": "https://github.com/jczarnowski/DeepFactors",
+      "owner": "jczarnowski",
+      "description": "Real-Time Probabilistic Dense Monocular SLAM Using Compact Code Representation",
+      "language": "C++",
+      "topics": [],
+      "stars": 641,
+      "lastPush": "2022-10-15",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1109/lra.2020.2965415",
+      "homepage": "https://www.imperial.ac.uk/dyson-robotics-lab/projects/deepfactors",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Dyson Robotics Lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "deepmedic--deepmedic",
+      "name": "deepmedic",
+      "repo": "https://github.com/deepmedic/deepmedic",
+      "owner": "deepmedic",
+      "description": "Efficient Multi-Scale 3D Convolutional Neural Network for Segmentation of 3D Medical Scans",
+      "language": "Python",
+      "topics": [
+        "convolutional-neural-networks",
+        "deep-learning",
+        "machine-learning",
+        "medical-imaging",
+        "neural-networks"
+      ],
+      "stars": 1068,
+      "lastPush": "2024-08-04",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1016/j.media.2016.10.004",
+      "homepage": null,
+      "featuredMonth": "2021-06",
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "biomedia-mira--deepscm",
+      "name": "deepscm",
+      "repo": "https://github.com/biomedia-mira/deepscm",
+      "owner": "biomedia-mira",
+      "description": "Repository for Deep Structural Causal Models for Tractable Counterfactual Inference",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "causal-inference",
+        "counterfactuals",
+        "deep-learning",
+        "normalizing-flows",
+        "variational-autoencoders"
+      ],
+      "stars": 297,
+      "lastPush": "2023-07-06",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "vimc--dettl",
+      "name": "dettl",
+      "repo": "https://github.com/vimc/dettl",
+      "owner": "vimc",
+      "description": ":bar_chart::shower: Data extract, transform, test and load",
+      "language": "R",
+      "topics": [],
+      "stars": 1,
+      "lastPush": "2022-09-29",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://vimc.github.io/dettl",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Vaccine Impact Modelling Consortium",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "devitocodes--devito",
+      "name": "devito",
+      "repo": "https://github.com/devitocodes/devito",
+      "owner": "devitocodes",
+      "description": "DSL and compiler framework for automated finite-differences and stencil computation",
+      "language": "Python",
+      "topics": [
+        "code-generation",
+        "compiler",
+        "dsl",
+        "finite-difference",
+        "fwi",
+        "gpu",
+        "hpc",
+        "jit",
+        "performance",
+        "rtm",
+        "stencil",
+        "sympy",
+        "ultrasound-imaging"
+      ],
+      "stars": 718,
+      "lastPush": "2026-11-10",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5194/gmd-12-1165-2019",
+      "homepage": "http://www.devitoproject.org",
+      "featuredMonth": "2019-03",
+      "metadataAvailable": true,
+      "departments": [
+        "earth-science-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Devito project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--django-drf-filepond",
+      "name": "django-drf-filepond",
+      "repo": "https://github.com/ImperialCollegeLondon/django-drf-filepond",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Computing Service",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "dltk--dltk",
+      "name": "DLTK",
+      "repo": "https://github.com/DLTK/DLTK",
+      "owner": "DLTK",
+      "description": "Deep Learning Toolkit for Medical Image Analysis",
+      "language": "Python",
+      "topics": [
+        "cnn",
+        "data-science",
+        "deep-learning",
+        "deep-neural-networks",
+        "dltk",
+        "dltk-model-zoo",
+        "machine-learning",
+        "medical",
+        "medical-image-processing",
+        "medical-imaging",
+        "ml",
+        "neural-network",
+        "neural-networks",
+        "neuroimaging",
+        "python",
+        "tensorflow"
+      ],
+      "stars": 1461,
+      "lastPush": "2023-03-24",
+      "archived": false,
+      "inactive": true,
+      "doi": "10044/1/54699",
+      "homepage": "https://dltk.github.io/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "kaixhin--dockerfiles",
+      "name": "dockerfiles",
+      "repo": "https://github.com/Kaixhin/dockerfiles",
+      "owner": "Kaixhin",
+      "description": "Compilation of Dockerfiles with automated builds enabled on the Docker Registry",
+      "language": "Dockerfile",
+      "topics": [
+        "cuda",
+        "deep-learning",
+        "docker",
+        "dockerfiles",
+        "machine-learning",
+        "vnc"
+      ],
+      "stars": 502,
+      "lastPush": "2019-08-02",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://hub.docker.com/u/kaixhin/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "barnesgroupicl--driftfusion",
+      "name": "Driftfusion",
+      "repo": "https://github.com/barnesgroupICL/Driftfusion",
+      "owner": "barnesgroupICL",
+      "description": "An open source drift diffusion code based in MATLAB for simulating semiconductor devices with mixed ionic-electronic conducting materials.",
+      "language": "MATLAB",
+      "topics": [],
+      "stars": 66,
+      "lastPush": "2022-12-14",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1039/C8EE02362J",
+      "homepage": null,
+      "featuredMonth": "2019-06",
+      "metadataAvailable": true,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Barnes group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--drjacoby",
+      "name": "drjacoby",
+      "repo": "https://github.com/mrc-ide/drjacoby",
+      "owner": "mrc-ide",
+      "description": "Flexible Markov chain monte carlo via reparameterization",
+      "language": "R",
+      "topics": [],
+      "stars": 14,
+      "lastPush": "2024-07-18",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/drjacoby/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "biomedia-mira--drop2",
+      "name": "drop2",
+      "repo": "https://github.com/biomedia-mira/drop2",
+      "owner": "biomedia-mira",
+      "description": "drop2 - intensity-based image registration",
+      "language": "C++",
+      "topics": [],
+      "stars": 38,
+      "lastPush": "2020-08-28",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1146/annurev-bioeng-071910-124649",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--dust",
+      "name": "dust",
+      "repo": "https://github.com/mrc-ide/dust",
+      "owner": "mrc-ide",
+      "description": ":sparkles::sparkles::sparkles: Iterate multiple realisations of stochastic models",
+      "language": "C++",
+      "topics": [],
+      "stars": 20,
+      "lastPush": "2025-08-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/dust",
+      "featuredMonth": "2020-12",
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "effective-quadratures--effective-quadratures",
+      "name": "Effective-Quadratures",
+      "repo": "https://github.com/Effective-Quadratures/Effective-Quadratures",
+      "owner": "Effective-Quadratures",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.21105/joss.00166",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Uncertainty quantification",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "lucydot--effmass",
+      "name": "effmass",
+      "repo": "https://github.com/lucydot/effmass",
+      "owner": "lucydot",
+      "description": "Calculates various definitions of effective mass from the electronic bandstructure of a semiconductor.",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 86,
+      "lastPush": "2026-05-11",
+      "archived": false,
+      "inactive": false,
+      "doi": "0.21105/joss.00797",
+      "homepage": "https://effmass.readthedocs.io/en/latest/",
+      "featuredMonth": "2019-01",
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mp3guy--elasticfusion",
+      "name": "ElasticFusion",
+      "repo": "https://github.com/mp3guy/ElasticFusion",
+      "owner": "mp3guy",
+      "description": "Real-time dense visual SLAM system",
+      "language": "C++",
+      "topics": [
+        "cuda",
+        "reconstruction",
+        "slam"
+      ],
+      "stars": 1933,
+      "lastPush": "2025-08-03",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1177/0278364916669237",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Dyson Robotics Lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "cog-imperial--entmoot",
+      "name": "entmoot",
+      "repo": "https://github.com/cog-imperial/entmoot",
+      "owner": "cog-imperial",
+      "description": "Multiobjective black-box optimization using gradient-boosted trees",
+      "language": "Python",
+      "topics": [
+        "bayesian-optimization",
+        "black-box-optimization",
+        "gradient-boosted-trees",
+        "hyperparameter-optimization",
+        "mixed-integer-programming",
+        "multiobjective-optimization",
+        "optimization",
+        "python"
+      ],
+      "stars": 64,
+      "lastPush": "2026-02-19",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://entmoot.readthedocs.io/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational Optimisation Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--epicollectplus",
+      "name": "EpiCollectplus",
+      "repo": "https://github.com/ImperialCollegeLondon/EpiCollectplus",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1371/journal.pone.0006968",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Genomic epidemiology",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--epidemia",
+      "name": "epidemia",
+      "repo": "https://github.com/ImperialCollegeLondon/epidemia",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1038/s41586-020-2405-7",
+      "homepage": "https://imperialcollegelondon.github.io/epidemia/index.html",
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mrc-ide--epiestim",
+      "name": "EpiEstim",
+      "repo": "https://github.com/mrc-ide/EpiEstim",
+      "owner": "mrc-ide",
+      "description": "A tool to estimate time varying instantaneous reproduction number during epidemics",
+      "language": "R",
+      "topics": [],
+      "stars": 107,
+      "lastPush": "2026-10-23",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/EpiEstim",
+      "featuredMonth": "2021-10",
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "wmd-group--eris",
+      "name": "Eris",
+      "repo": "https://github.com/WMD-group/Eris",
+      "owner": "WMD-group",
+      "description": "Monte Carlo codes to simulate cation disorder in kesterite semiconductors",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "defects",
+        "materials",
+        "monte-carlo",
+        "photovoltaic",
+        "physics",
+        "semiconductor",
+        "thermodynamics"
+      ],
+      "stars": 5,
+      "lastPush": "2019-03-18",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.1471439",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "gilestrolab--ethoscope",
+      "name": "ethoscope",
+      "repo": "https://github.com/gilestrolab/ethoscope",
+      "owner": "gilestrolab",
+      "description": "a platform from monitoring animal behaviour in real time from a raspberry pi",
+      "language": "G-code",
+      "topics": [],
+      "stars": 21,
+      "lastPush": "2026-11-06",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "http://lab.gilest.ro/ethoscope/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "life-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Gilestro lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "nathanskene--ewce",
+      "name": "EWCE",
+      "repo": "https://github.com/NathanSkene/EWCE",
+      "owner": "NathanSkene",
+      "description": "Expression Weighted Celltype Enrichment. See the package website for up-to-date instructions on usage.",
+      "language": "R",
+      "topics": [
+        "deconvolution",
+        "single-cell",
+        "single-cell-rna-seq",
+        "transcriptomics"
+      ],
+      "stars": 60,
+      "lastPush": "2026-10-14",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.3389/fnins.2016.00016",
+      "homepage": "https://nathanskene.github.io/EWCE/index.html",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "brain-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Skene lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--faasm",
+      "name": "faasm",
+      "repo": "https://github.com/lsds/faasm",
+      "owner": "lsds",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "kaixhin--fglab",
+      "name": "FGLab",
+      "repo": "https://github.com/Kaixhin/FGLab",
+      "owner": "Kaixhin",
+      "description": "Future Gadget Laboratory",
+      "language": "HTML",
+      "topics": [
+        "machine-learning",
+        "reproducible-research",
+        "reproducible-science"
+      ],
+      "stars": 226,
+      "lastPush": "2018-03-03",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://kaixhin.github.io/FGLab/",
+      "featuredMonth": "2020-10",
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "kaixhin--fgmachine",
+      "name": "FGMachine",
+      "repo": "https://github.com/Kaixhin/FGMachine",
+      "owner": "Kaixhin",
+      "description": "Future Gadget Machine",
+      "language": "JavaScript",
+      "topics": [
+        "machine-learning",
+        "reproducible-research",
+        "reproducible-science"
+      ],
+      "stars": 70,
+      "lastPush": "2018-03-22",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://kaixhin.github.io/FGLab/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "firedrakeproject--firedrake",
+      "name": "firedrake",
+      "repo": "https://github.com/firedrakeproject/firedrake",
+      "owner": "firedrakeproject",
+      "description": "Firedrake is an automated system for the portable solution of partial differential equations using the finite element method (FEM)",
+      "language": "Python",
+      "topics": [],
+      "stars": 682,
+      "lastPush": "2026-11-10",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5194/gmd-9-3803-2016",
+      "homepage": "https://firedrakeproject.org",
+      "featuredMonth": "2021-01",
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Firedrake project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "fluidityproject--fluidity",
+      "name": "fluidity",
+      "repo": "https://github.com/FluidityProject/fluidity",
+      "owner": "FluidityProject",
+      "description": "Fluidity",
+      "language": "Fortran",
+      "topics": [
+        "cfd",
+        "computational-fluid-dynamics"
+      ],
+      "stars": 388,
+      "lastPush": "2026-11-03",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1029/2011GC003551",
+      "homepage": "http://fluidity-project.org",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "earth-science-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Applied Modelling and Computation Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ec363--fpcountr",
+      "name": "fpcountr",
+      "repo": "https://github.com/ec363/fpcountr",
+      "owner": "ec363",
+      "description": "Fluorescent protein calibration for plate readers",
+      "language": "R",
+      "topics": [],
+      "stars": 8,
+      "lastPush": "2025-10-20",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1101/2021.12.06.471413",
+      "homepage": "https://ec363.github.io/fpcountr/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Synthetic biology",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--fractalgenetics",
+      "name": "fractalgenetics",
+      "repo": "https://github.com/ImperialCollegeLondon/fractalgenetics",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1038/s41586-020-2635-8",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "clinical-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Cardiac genetics",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "cog-imperial--galini",
+      "name": "galini",
+      "repo": "https://github.com/cog-imperial/galini",
+      "owner": "cog-imperial",
+      "description": "An extensible MINLP solver",
+      "language": "Python",
+      "topics": [
+        "mathematical-programming",
+        "minlp",
+        "minlp-solver",
+        "mixed-integer-optimization",
+        "nonlinear-optimization",
+        "optimization",
+        "pyomo"
+      ],
+      "stars": 45,
+      "lastPush": "2026-02-05",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://cog-imperial.github.io/galini/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational Optimisation Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "patscott--gambit_1-3",
+      "name": "gambit_1.3",
+      "repo": "https://github.com/patscott/gambit_1.3",
+      "owner": "patscott",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1140/epjc/s10052-017-5321-8",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Astrophysics / GAMBIT collaboration",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--global-lmic-reports-orderly",
+      "name": "global-lmic-reports-orderly",
+      "repo": "https://github.com/mrc-ide/global-lmic-reports-orderly",
+      "owner": "mrc-ide",
+      "description": "COVID-19 forecast reports for LMICs",
+      "language": "R",
+      "topics": [],
+      "stars": 8,
+      "lastPush": "2024-03-23",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "tanhevg--gpabc-jl",
+      "name": "GpABC.jl",
+      "repo": "https://github.com/tanhevg/GpABC.jl",
+      "owner": "tanhevg",
+      "description": null,
+      "language": "Julia",
+      "topics": [],
+      "stars": 60,
+      "lastPush": "2026-04-14",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "life-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Theoretical Systems Biology",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "cog-imperial--gpdoemd",
+      "name": "GPdoemd",
+      "repo": "https://github.com/cog-imperial/GPdoemd",
+      "owner": "cog-imperial",
+      "description": "Design of experiments for model discrimination using Gaussian process surrogate models",
+      "language": "Python",
+      "topics": [],
+      "stars": 37,
+      "lastPush": "2019-03-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational Optimisation Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mc-imperial--gpuverify",
+      "name": "gpuverify",
+      "repo": "https://github.com/mc-imperial/gpuverify",
+      "owner": "mc-imperial",
+      "description": "GPUVerify: a Verifier for GPU Kernels",
+      "language": "C#",
+      "topics": [],
+      "stars": 84,
+      "lastPush": "2022-07-28",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1145/2398857.2384625",
+      "homepage": "http://multicore.doc.ic.ac.uk/tools/GPUVerify/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Multicore Programming Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "firedrakeproject--gusto",
+      "name": "gusto",
+      "repo": "https://github.com/firedrakeproject/gusto",
+      "owner": "firedrakeproject",
+      "description": "Three dimensional atmospheric dynamical core using the Gung Ho numerics.",
+      "language": "Python",
+      "topics": [],
+      "stars": 20,
+      "lastPush": "2026-11-02",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "http://firedrakeproject.org/gusto/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Firedrake project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--hcga",
+      "name": "hcga",
+      "repo": "https://github.com/ImperialCollegeLondon/hcga",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": "https://barahona-research-group.github.io/hcga/",
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Barahona group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "umbralcalc--helmpy",
+      "name": "helmpy",
+      "repo": "https://github.com/umbralcalc/helmpy",
+      "owner": "umbralcalc",
+      "description": "An all-in-one python class for optimised stochastic simulation and forecasting the effect of mass drug administration on helminth (parasitic worm) disease transmission",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 2,
+      "lastPush": "2023-12-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://sites.google.com/view/helmpy",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Infectious disease modelling",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "wmd-group--hybrid-perovskites",
+      "name": "hybrid-perovskites",
+      "repo": "https://github.com/WMD-group/hybrid-perovskites",
+      "owner": "WMD-group",
+      "description": "DFT optimised crystal structures of inorganic and hybrid halide perovskites",
+      "language": null,
+      "topics": [],
+      "stars": 112,
+      "lastPush": "2019-09-03",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.2641358",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--iclocs",
+      "name": "ICLOCS",
+      "repo": "https://github.com/ImperialCollegeLondon/ICLOCS",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": "http://www.ee.ic.ac.uk/ICLOCS/",
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "electrical-electronic-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Control and Power",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "csmsoftware--impacts",
+      "name": "IMPaCTS",
+      "repo": "https://github.com/csmsoftware/IMPaCTS",
+      "owner": "csmsoftware",
+      "description": "Imperial Metabolic Profiling and Chemometrics Toolbox for Spectroscopy",
+      "language": "MATLAB",
+      "topics": [],
+      "stars": 5,
+      "lastPush": "2019-05-21",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.3077413",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "metabolism-digestion-reproduction"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational and Systems Medicine",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "xcompact3d--incompact3d",
+      "name": "Incompact3d",
+      "repo": "https://github.com/xcompact3d/Incompact3d",
+      "owner": "xcompact3d",
+      "description": "Current CPU version of our solver for the Navier-Stokes equations",
+      "language": "Fortran",
+      "topics": [
+        "cfd",
+        "computational-fluid-dynamics",
+        "direct-numerical-simulation",
+        "large-eddy-simulation",
+        "navier-stokes"
+      ],
+      "stars": 218,
+      "lastPush": "2026-01-28",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1002/fld.2480",
+      "homepage": "https://xcompact3d.readthedocs.io/en/latest/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Turbulence simulation",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--individual",
+      "name": "individual",
+      "repo": "https://github.com/mrc-ide/individual",
+      "owner": "mrc-ide",
+      "description": "R Package for individual based epidemiological models",
+      "language": "R",
+      "topics": [
+        "agent-based-modeling",
+        "epidemiology",
+        "individual-based-modelling",
+        "infectious-diseases",
+        "r",
+        "r-package",
+        "rstats"
+      ],
+      "stars": 35,
+      "lastPush": "2026-06-08",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/individual",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "juliaarrays--infinitearrays-jl",
+      "name": "InfiniteArrays.jl",
+      "repo": "https://github.com/JuliaArrays/InfiniteArrays.jl",
+      "owner": "JuliaArrays",
+      "description": "A Julia package for representing infinite-dimensional arrays",
+      "language": "Julia",
+      "topics": [],
+      "stars": 76,
+      "lastPush": "2026-11-05",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2022-02",
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "biomedia-mira--istn",
+      "name": "istn",
+      "repo": "https://github.com/biomedia-mira/istn",
+      "owner": "biomedia-mira",
+      "description": "Image-and-Spatial Transformer Networks",
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "image-registration",
+        "medical-imaging",
+        "spatial-transformer-networks"
+      ],
+      "stars": 111,
+      "lastPush": "2023-02-15",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1007/978-3-030-32245-8_38",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mc-imperial--jfs",
+      "name": "jfs",
+      "repo": "https://github.com/mc-imperial/jfs",
+      "owner": "mc-imperial",
+      "description": "Constraint solver based on coverage-guided fuzzing",
+      "language": "C++",
+      "topics": [
+        "constraint-solver",
+        "coverage-guided-fuzzing",
+        "floating-point-arithmetic",
+        "fuzzing",
+        "jit",
+        "libfuzzer",
+        "llvm",
+        "smtlib",
+        "smtlibv2",
+        "z3"
+      ],
+      "stars": 250,
+      "lastPush": "2023-11-28",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1145/3338906.3338921",
+      "homepage": null,
+      "featuredMonth": "2020-07",
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Multicore Programming Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ropensci--jsonvalidate",
+      "name": "jsonvalidate",
+      "repo": "https://github.com/ropensci/jsonvalidate",
+      "owner": "ropensci",
+      "description": ":heavy_check_mark::interrobang: Validate JSON",
+      "language": "R",
+      "topics": [
+        "json",
+        "json-validation",
+        "jsonvalidate",
+        "r",
+        "r-package",
+        "rstats"
+      ],
+      "stars": 52,
+      "lastPush": "2025-02-07",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://docs.ropensci.org/jsonvalidate",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "jarvist--julia-phonons",
+      "name": "Julia-Phonons",
+      "repo": "https://github.com/jarvist/Julia-Phonons",
+      "owner": "jarvist",
+      "description": "Julia codes to play with Phonons",
+      "language": "Julia",
+      "topics": [
+        "phonons",
+        "phonopy"
+      ],
+      "stars": 25,
+      "lastPush": "2018-11-07",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "klee--klee",
+      "name": "klee",
+      "repo": "https://github.com/klee/klee",
+      "owner": "klee",
+      "description": "KLEE Symbolic Execution Engine",
+      "language": "C++",
+      "topics": [
+        "klee",
+        "symbolic-execution"
+      ],
+      "stars": 2998,
+      "lastPush": "2026-11-04",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5555/1855741.1855756",
+      "homepage": "https://klee-se.org/",
+      "featuredMonth": "2021-04",
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Software Reliability Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--kungfu",
+      "name": "KungFu",
+      "repo": "https://github.com/lsds/KungFu",
+      "owner": "lsds",
+      "description": "Fast and Adaptive Distributed Machine Learning for TensorFlow, PyTorch and MindSpore.",
+      "language": "Go",
+      "topics": [
+        "distributed-systems",
+        "distributed-training",
+        "keras",
+        "tensorflow"
+      ],
+      "stars": 297,
+      "lastPush": "2024-02-23",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2021-07",
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "juliaarrays--lazyarrays-jl",
+      "name": "LazyArrays.jl",
+      "repo": "https://github.com/JuliaArrays/LazyArrays.jl",
+      "owner": "JuliaArrays",
+      "description": "Lazy arrays and linear algebra in Julia",
+      "language": "Julia",
+      "topics": [],
+      "stars": 312,
+      "lastPush": "2026-10-26",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2022-02",
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "juliamatrices--lazybandedmatrices-jl",
+      "name": "LazyBandedMatrices.jl",
+      "repo": "https://github.com/JuliaMatrices/LazyBandedMatrices.jl",
+      "owner": "JuliaMatrices",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2022-02",
+      "metadataAvailable": false,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Numerical analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "lsds--lightsaber",
+      "name": "LightSaber",
+      "repo": "https://github.com/lsds/LightSaber",
+      "owner": "lsds",
+      "description": "Multi-core Window-Based Stream Processing Engine",
+      "language": "C++",
+      "topics": [
+        "aggregation",
+        "compression",
+        "cpp",
+        "incremental-computation",
+        "libaio",
+        "llvm",
+        "multi-core",
+        "numa",
+        "rdma",
+        "sliding-windows",
+        "ssd",
+        "stream-processing"
+      ],
+      "stars": 73,
+      "lastPush": "2021-10-20",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://lsds.doc.ic.ac.uk/projects/lightsaber",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "wmd-group--macrodensity",
+      "name": "MacroDensity",
+      "repo": "https://github.com/WMD-group/MacroDensity",
+      "owner": "WMD-group",
+      "description": "Python package to analyse electron density & electrostatic potential grids",
+      "language": "Python",
+      "topics": [
+        "charge-density",
+        "density-functional-theory",
+        "electrostatic-potential",
+        "ionisation-potential",
+        "semiconductor-physics",
+        "vasp",
+        "workfunction"
+      ],
+      "stars": 92,
+      "lastPush": "2026-01-10",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1021/ja4110073",
+      "homepage": "https://macrodensity.readthedocs.io",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--magda_tools",
+      "name": "magda_tools",
+      "repo": "https://github.com/ImperialCollegeLondon/magda_tools",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Space, Plasma and Climate",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "nathanskene--magma_celltyping",
+      "name": "MAGMA_Celltyping",
+      "repo": "https://github.com/NathanSkene/MAGMA_Celltyping",
+      "owner": "NathanSkene",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1038/s41588-018-0129-5",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "brain-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Skene lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "biomedia-mira--masf",
+      "name": "masf",
+      "repo": "https://github.com/biomedia-mira/masf",
+      "owner": "biomedia-mira",
+      "description": "Domain Generalization via Model-Agnostic Learning of Semantic Features",
+      "language": "Python",
+      "topics": [],
+      "stars": 151,
+      "lastPush": "2023-03-24",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "biomedia--mirtk",
+      "name": "MIRTK",
+      "repo": "https://github.com/BioMedIA/MIRTK",
+      "owner": "BioMedIA",
+      "description": "The Medical Image Registration ToolKit (MIRTK), the successor of the IRTK, contains common CMake build configuration files, core libraries, and basic command-line tools. Extension packages are hosted by the MIRTK GitHub group at",
+      "language": "C++",
+      "topics": [
+        "ffd",
+        "free-form-deformation",
+        "image-processing",
+        "image-registration",
+        "medical-imaging",
+        "toolkit"
+      ],
+      "stars": 202,
+      "lastPush": "2025-02-27",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://github.com/MIRTK",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BioMedIA",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialchem--mrd-demo",
+      "name": "mrd-demo",
+      "repo": "https://github.com/imperialchem/mrd-demo",
+      "owner": "imperialchem",
+      "description": "Demonstration of classical molecular reaction dynamics for a tri-atomic system",
+      "language": "Python",
+      "topics": [],
+      "stars": 1,
+      "lastPush": "2026-09-25",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "chemistry"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Department of Chemistry",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mwoodbri--mridb",
+      "name": "MRIdb",
+      "repo": "https://github.com/mwoodbri/MRIdb",
+      "owner": "mwoodbri",
+      "description": "An end-to-end data management system for MRI",
+      "language": "Java",
+      "topics": [],
+      "stars": 19,
+      "lastPush": "2018-09-20",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "http://www.imperial.ac.uk/bioinformatics-data-science-group/resources/software/mridb/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "clinical-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRI data management",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mc-imperial--multicore-test-harness",
+      "name": "multicore-test-harness",
+      "repo": "https://github.com/mc-imperial/multicore-test-harness",
+      "owner": "mc-imperial",
+      "description": "A multicore microprocessor test harness for measuring interference",
+      "language": "C",
+      "topics": [],
+      "stars": 15,
+      "lastPush": "2020-04-16",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Multicore Programming Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--neptune",
+      "name": "Neptune",
+      "repo": "https://github.com/lsds/Neptune",
+      "owner": "lsds",
+      "description": "Neptune Execution Framework for Stream/Batch Spark Applications",
+      "language": "Scala",
+      "topics": [],
+      "stars": 9,
+      "lastPush": "2019-09-21",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1145/3357223.3362724",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "phenomecentre--npyc-toolbox",
+      "name": "nPYc-Toolbox",
+      "repo": "https://github.com/phenomecentre/nPYc-Toolbox",
+      "owner": "phenomecentre",
+      "description": "The nPYc-Toolbox defines objects for representing, and implements functions to manipulate and display, metabolic profiling datasets.",
+      "language": "Python",
+      "topics": [
+        "metabolic-phenotyping",
+        "metabolomics",
+        "quality-control"
+      ],
+      "stars": 25,
+      "lastPush": "2026-11-06",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "metabolism-digestion-reproduction"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "National Phenome Centre",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--odin",
+      "name": "odin",
+      "repo": "https://github.com/mrc-ide/odin",
+      "owner": "mrc-ide",
+      "description": "ᚩ A DSL for describing and solving differential equations in R",
+      "language": "R",
+      "topics": [
+        "infrastructure"
+      ],
+      "stars": 106,
+      "lastPush": "2026-01-15",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/odin",
+      "featuredMonth": "2020-12",
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "vimc--orderly",
+      "name": "orderly",
+      "repo": "https://github.com/vimc/orderly",
+      "owner": "vimc",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2019-02",
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Vaccine Impact Modelling Consortium",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "morganslab--oscilos_long",
+      "name": "OSCILOS_Long",
+      "repo": "https://github.com/MorgansLab/OSCILOS_long",
+      "owner": "MorgansLab",
+      "description": "OSCILOS_long is an open source code for simulating combustion instabilities. OSCILOS_lite was developed at Imperial College London by Prof. Aimee S. Morgans and co-workers. The code is open source and written in MATLAB.",
+      "language": "MATLAB",
+      "topics": [],
+      "stars": 6,
+      "lastPush": "2021-05-18",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "http://www.oscilos.com/",
+      "featuredMonth": "2020-03",
+      "metadataAvailable": true,
+      "departments": [
+        "mechanical-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Morgans lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ec363--parsleyapp",
+      "name": "parsleyapp",
+      "repo": "https://github.com/ec363/parsleyapp",
+      "owner": "ec363",
+      "description": "Data parsing (data extraction, tidying and metadata joining) for plate reader export files",
+      "language": "R",
+      "topics": [],
+      "stars": 8,
+      "lastPush": "2024-10-20",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1093/bioinformatics/btad733",
+      "homepage": "https://github.com/ec363/parsleyapp",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Synthetic biology",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mrc-ide--phydyn",
+      "name": "PhyDyn",
+      "repo": "https://github.com/mrc-ide/PhyDyn",
+      "owner": "mrc-ide",
+      "description": "PhyDyn: Epidemiological modelling in BEAST",
+      "language": "Java",
+      "topics": [],
+      "stars": 21,
+      "lastPush": "2026-09-07",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperial-visualizations--physics-visualizations",
+      "name": "Physics-Visualizations",
+      "repo": "https://github.com/Imperial-visualizations/Physics-Visualizations",
+      "owner": "Imperial-visualizations",
+      "description": "A computational project at Imperial College London to develop interactive visualizations for education.",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 20,
+      "lastPush": "2022-07-13",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Physics visualisations project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "patscott--pippi",
+      "name": "pippi",
+      "repo": "https://github.com/patscott/pippi",
+      "owner": "patscott",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1140/epjp/i2012-12138-3",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Astrophysics / GAMBIT collaboration",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "kaixhin--planet",
+      "name": "PlaNet",
+      "repo": "https://github.com/Kaixhin/PlaNet",
+      "owner": "Kaixhin",
+      "description": "Deep Planning Network: Control from pixels by latent planning with learned dynamics",
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "deep-reinforcement-learning"
+      ],
+      "stars": 379,
+      "lastPush": "2021-10-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mrc-ide--plasmomapi",
+      "name": "PlasmoMAPI",
+      "repo": "https://github.com/mrc-ide/PlasmoMAPI",
+      "owner": "mrc-ide",
+      "description": "Mapping Plasmodium Spatial Connectivity from Genetic Data",
+      "language": "R",
+      "topics": [],
+      "stars": 3,
+      "lastPush": "2021-10-26",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/PlasmoMAPI/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "johnlees--poppunk",
+      "name": "PopPUNK",
+      "repo": "https://github.com/johnlees/PopPUNK",
+      "owner": "johnlees",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1101/gr.241455.118",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "johnlees--pp-sketchlib",
+      "name": "pp-sketchlib",
+      "repo": "https://github.com/johnlees/pp-sketchlib",
+      "owner": "johnlees",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mrc-ide--provisionr",
+      "name": "provisionr",
+      "repo": "https://github.com/mrc-ide/provisionr",
+      "owner": "mrc-ide",
+      "description": ":package::package::arrow_right::classical_building: Provision a library of R packages",
+      "language": "R",
+      "topics": [
+        "cluster",
+        "infrastructure"
+      ],
+      "stars": 26,
+      "lastPush": "2020-09-04",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "dolfin-adjoint--pyadjoint",
+      "name": "pyadjoint",
+      "repo": "https://github.com/dolfin-adjoint/pyadjoint",
+      "owner": "dolfin-adjoint",
+      "description": "The algorithmic differentation tool pyadjoint and add-ons.",
+      "language": "Python",
+      "topics": [],
+      "stars": 121,
+      "lastPush": "2026-10-22",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "mathematics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Firedrake / adjoint methods",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "pybamm-team--pybamm",
+      "name": "PyBaMM",
+      "repo": "https://github.com/pybamm-team/PyBaMM",
+      "owner": "pybamm-team",
+      "description": "Fast and flexible physics-based battery models in Python",
+      "language": "Python",
+      "topics": [
+        "batteries",
+        "battery-models",
+        "hacktoberfest",
+        "pybamm",
+        "python",
+        "simulation",
+        "solvers"
+      ],
+      "stars": 1729,
+      "lastPush": "2026-11-09",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1149/osf.io/67ckj",
+      "homepage": "https://www.pybamm.org/",
+      "featuredMonth": "2020-05",
+      "metadataAvailable": true,
+      "departments": [
+        "mechanical-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Electrochemical science and engineering",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "vincentlab--pyfr",
+      "name": "PyFR",
+      "repo": "https://github.com/vincentlab/PyFR",
+      "owner": "vincentlab",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1016/j.cpc.2014.07.011",
+      "homepage": null,
+      "featuredMonth": "2019-08",
+      "metadataAvailable": false,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Vincent lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "op2--pyop2",
+      "name": "PyOP2",
+      "repo": "https://github.com/OP2/PyOP2",
+      "owner": "OP2",
+      "description": "ARCHIVED Framework for performance-portable parallel computations on unstructured meshes",
+      "language": "Python",
+      "topics": [],
+      "stars": 83,
+      "lastPush": "2025-03-31",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1109/SC.Companion.2012.134",
+      "homepage": "https://op2.github.io/PyOP2",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Software Performance Optimisation group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "devitocodes--pyrevolve",
+      "name": "pyrevolve",
+      "repo": "https://github.com/devitocodes/pyrevolve",
+      "owner": "devitocodes",
+      "description": "Python library to manage checkpointing for adjoints",
+      "language": "Python",
+      "topics": [],
+      "stars": 21,
+      "lastPush": "2026-08-07",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "earth-science-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Devito project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "projectpyrho--pyrho",
+      "name": "PyRhO",
+      "repo": "https://github.com/ProjectPyRhO/PyRhO",
+      "owner": "ProjectPyRhO",
+      "description": "A virtual optogenetics laboratory",
+      "language": "Python",
+      "topics": [
+        "brain",
+        "brainweb",
+        "brian2",
+        "computational-neuroscience",
+        "jupyter-widget",
+        "neuron",
+        "neuroscience",
+        "opsin",
+        "optogenetics",
+        "python"
+      ],
+      "stars": 46,
+      "lastPush": "2023-07-24",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [],
+      "central": false,
+      "attribution": {
+        "group": null,
+        "confidence": null
+      }
+    },
+    {
+      "id": "mgalardini--pyseer",
+      "name": "pyseer",
+      "repo": "https://github.com/mgalardini/pyseer",
+      "owner": "mgalardini",
+      "description": "SEER, reimplemented in python 🐍🔮",
+      "language": "Python",
+      "topics": [
+        "bacteria",
+        "gwas",
+        "k-mer",
+        "reimplementation",
+        "reproducible-science"
+      ],
+      "stars": 141,
+      "lastPush": "2026-10-12",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "http://pyseer.readthedocs.io",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Bacterial genomics",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "gilestrolab--pysolo",
+      "name": "pySolo",
+      "repo": "https://github.com/gilestrolab/pySolo",
+      "owner": "gilestrolab",
+      "description": "A software for sleep analysis in Drosophila",
+      "language": "Python",
+      "topics": [],
+      "stars": 8,
+      "lastPush": "2023-02-25",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1093/bioinformatics/btp237",
+      "homepage": "http://www.pysolo.net",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "life-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Gilestro lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--pytest_template_application",
+      "name": "pytest_template_application",
+      "repo": "https://github.com/ImperialCollegeLondon/pytest_template_application",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Software Engineering team",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "fabiopardo--qmap",
+      "name": "qmap",
+      "repo": "https://github.com/fabiopardo/qmap",
+      "owner": "fabiopardo",
+      "description": "Scaling All-Goals Updates in Reinforcement Learning Using Convolutional Neural Networks",
+      "language": "Python",
+      "topics": [
+        "mario-bros",
+        "q-learning",
+        "reinforcement-learning"
+      ],
+      "stars": 38,
+      "lastPush": "2020-02-05",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://sites.google.com/view/q-map-rl",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "design-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Robot Intelligence Lab",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--r2t2",
+      "name": "R2T2",
+      "repo": "https://github.com/ImperialCollegeLondon/R2T2",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Software Engineering team",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "kaixhin--rainbow",
+      "name": "Rainbow",
+      "repo": "https://github.com/Kaixhin/Rainbow",
+      "owner": "Kaixhin",
+      "description": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "deep-reinforcement-learning"
+      ],
+      "stars": 1674,
+      "lastPush": "2022-01-13",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--rcs-pacemakers",
+      "name": "rcs-pacemakers",
+      "repo": "https://github.com/ImperialCollegeLondon/rcs-pacemakers",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Computing Service",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--rcs_cluster_scripts",
+      "name": "rcs_cluster_scripts",
+      "repo": "https://github.com/ImperialCollegeLondon/rcs_cluster_scripts",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Computing Service",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--research-software-directory-data",
+      "name": "research-software-directory-data",
+      "repo": "https://github.com/ImperialCollegeLondon/research-software-directory-data",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2019-12",
+      "metadataAvailable": false,
+      "departments": [],
+      "central": true,
+      "attribution": {
+        "group": "Research Software Engineering team",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--ring",
+      "name": "ring",
+      "repo": "https://github.com/mrc-ide/ring",
+      "owner": "mrc-ide",
+      "description": ":ring: Ring buffers",
+      "language": "R",
+      "topics": [],
+      "stars": 12,
+      "lastPush": "2025-12-12",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/ring",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "mrc-ide--rrq",
+      "name": "rrq",
+      "repo": "https://github.com/mrc-ide/rrq",
+      "owner": "mrc-ide",
+      "description": ":runner::runner::runner: Lightweight Redis queues",
+      "language": "R",
+      "topics": [
+        "cluster",
+        "infrastructure"
+      ],
+      "stars": 27,
+      "lastPush": "2026-10-02",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/rrq/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--saber",
+      "name": "Saber",
+      "repo": "https://github.com/lsds/Saber",
+      "owner": "lsds",
+      "description": "Window-Based Hybrid CPU/GPU Stream Processing Engine",
+      "language": "Java",
+      "topics": [
+        "gpu",
+        "high-throughput",
+        "hybrid",
+        "multicore",
+        "multicore-cpu",
+        "saber",
+        "sliding-windows",
+        "stream",
+        "stream-processing",
+        "streaming",
+        "streaming-data"
+      ],
+      "stars": 45,
+      "lastPush": "2022-11-16",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://lsds.doc.ic.ac.uk/projects/saber",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--safedata",
+      "name": "safedata",
+      "repo": "https://github.com/ImperialCollegeLondon/safedata",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": "https://imperialcollegelondon.github.io/safedata/",
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "life-sciences"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "SAFE Project",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--sap-voicebox",
+      "name": "sap-voicebox",
+      "repo": "https://github.com/ImperialCollegeLondon/sap-voicebox",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "electrical-electronic-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Speech and Audio Processing",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--seep",
+      "name": "SEEP",
+      "repo": "https://github.com/lsds/SEEP",
+      "owner": "lsds",
+      "description": "Cluster computing using Stateful Dataflow Graphs",
+      "language": "Java",
+      "topics": [
+        "cluster-computing",
+        "dataflow-programming",
+        "sdg",
+        "stateful"
+      ],
+      "stars": 26,
+      "lastPush": "2022-07-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://lsds.doc.ic.ac.uk/projects/seep",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--sgx-lkl",
+      "name": "sgx-lkl",
+      "repo": "https://github.com/lsds/sgx-lkl",
+      "owner": "lsds",
+      "description": "SGX-LKL Library OS for running Linux applications inside of Intel SGX enclaves",
+      "language": "C",
+      "topics": [
+        "enclave",
+        "java",
+        "javascipt",
+        "jvm",
+        "linux",
+        "sgx",
+        "trusted-execution"
+      ],
+      "stars": 272,
+      "lastPush": "2022-12-25",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://lsds.doc.ic.ac.uk/projects/sgx-lkl",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--sharpy",
+      "name": "sharpy",
+      "repo": "https://github.com/ImperialCollegeLondon/sharpy",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.21105/joss.01885",
+      "homepage": null,
+      "featuredMonth": "2021-05",
+      "metadataAvailable": false,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Loads Control and Aeroelastics Lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "drmaciver--shrinkray",
+      "name": "shrinkray",
+      "repo": "https://github.com/DRMacIver/shrinkray",
+      "owner": "DRMacIver",
+      "description": "Shrinkray is a modern multi-format test-case reducer",
+      "language": "Python",
+      "topics": [],
+      "stars": 422,
+      "lastPush": "2026-09-14",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Software reliability",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mrc-ide--sircovid",
+      "name": "sircovid",
+      "repo": "https://github.com/mrc-ide/sircovid",
+      "owner": "mrc-ide",
+      "description": null,
+      "language": "C++",
+      "topics": [],
+      "stars": 29,
+      "lastPush": "2025-06-16",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/sircovid",
+      "featuredMonth": "2020-12",
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "wmd-group--smact",
+      "name": "SMACT",
+      "repo": "https://github.com/WMD-group/SMACT",
+      "owner": "WMD-group",
+      "description": "Python package to aid materials design and informatics",
+      "language": "Python",
+      "topics": [
+        "computational-chemistry",
+        "machine-learning",
+        "materials-design",
+        "materials-informatics",
+        "materials-science",
+        "materials-screening",
+        "python"
+      ],
+      "stars": 148,
+      "lastPush": "2026-11-10",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.5281/zenodo.268896",
+      "homepage": "https://smact.readthedocs.io",
+      "featuredMonth": "2021-12",
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "qpv-research-group--solcore5",
+      "name": "solcore5",
+      "repo": "https://github.com/qpv-research-group/solcore5",
+      "owner": "qpv-research-group",
+      "description": "A multi-scale, python-based library for the modelling of solar cells and semiconductor materials",
+      "language": "Python",
+      "topics": [
+        "hacktoberfest",
+        "photovoltaic",
+        "python",
+        "semiconductor",
+        "solar-cells"
+      ],
+      "stars": 160,
+      "lastPush": "2026-08-31",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://www.solcore.solar/",
+      "featuredMonth": "2019-06",
+      "metadataAvailable": true,
+      "departments": [
+        "physics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Quantum Photovoltaics group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "kaixhin--spinning-up-basic",
+      "name": "spinning-up-basic",
+      "repo": "https://github.com/Kaixhin/spinning-up-basic",
+      "owner": "Kaixhin",
+      "description": "Basic versions of agents from Spinning Up in Deep RL written in PyTorch",
+      "language": "Python",
+      "topics": [
+        "deep-learning",
+        "deep-reinforcement-learning"
+      ],
+      "stars": 208,
+      "lastPush": "2021-05-20",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "bioengineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "BICV group",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "mrc-ide--squire",
+      "name": "squire",
+      "repo": "https://github.com/mrc-ide/squire",
+      "owner": "mrc-ide",
+      "description": "SEIR transmission model of COVID-19. Documentation at:",
+      "language": "R",
+      "topics": [],
+      "stars": 53,
+      "lastPush": "2024-02-15",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://mrc-ide.github.io/squire/",
+      "featuredMonth": "2020-12",
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "MRC Centre for Global Infectious Disease Analysis",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "wmd-group--starrynight",
+      "name": "StarryNight",
+      "repo": "https://github.com/WMD-group/StarryNight",
+      "owner": "WMD-group",
+      "description": "Monte Carlo codes to simulate polar domains in hybrid perovskite solar cells",
+      "language": "C",
+      "topics": [
+        "dipole-domains",
+        "ferroelectric-domains",
+        "monte-carlo",
+        "monte-carlo-codes",
+        "perovskite",
+        "photovoltaic",
+        "recombination",
+        "semiconductor"
+      ],
+      "stars": 18,
+      "lastPush": "2019-05-24",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.5281/zenodo.10543",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "materials"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Materials Design group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "jelfsmaterialsgroup--stk",
+      "name": "stk",
+      "repo": "https://github.com/JelfsMaterialsGroup/stk",
+      "owner": "JelfsMaterialsGroup",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "chemistry"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Jelfs group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "su2code--su2",
+      "name": "SU2",
+      "repo": "https://github.com/su2code/SU2",
+      "owner": "su2code",
+      "description": "SU2: An Open-Source Suite for Multiphysics Simulation and Design",
+      "language": "C++",
+      "topics": [
+        "c-plus-plus",
+        "cfd",
+        "flow",
+        "fluid",
+        "fluid-dynamics",
+        "hpc",
+        "opensource",
+        "optimization",
+        "physics",
+        "python",
+        "simulation"
+      ],
+      "stars": 1856,
+      "lastPush": "2026-11-10",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": "https://su2code.github.io",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational fluid dynamics",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "cog-imperial--suspect",
+      "name": "suspect",
+      "repo": "https://github.com/cog-imperial/suspect",
+      "owner": "cog-imperial",
+      "description": "Special Structure Detection for Pyomo",
+      "language": "Python",
+      "topics": [
+        "convexity",
+        "mathematical-programming",
+        "mixed-integer-optimization",
+        "nonlinear-optimization",
+        "pyomo"
+      ],
+      "stars": 26,
+      "lastPush": "2022-07-14",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://cog-imperial.github.io/suspect/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Computational Optimisation Group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--talos",
+      "name": "TaLoS",
+      "repo": "https://github.com/lsds/TaLoS",
+      "owner": "lsds",
+      "description": "Efficient TLS termination inside Intel SGX enclaves for existing applications",
+      "language": "C",
+      "topics": [
+        "enclave",
+        "intel-sgx",
+        "libressl",
+        "sgx-enclave",
+        "talos",
+        "tls-connection",
+        "tls-library"
+      ],
+      "stars": 109,
+      "lastPush": "2022-01-25",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "paulhjkelly--taskgraph-metaprogramming",
+      "name": "taskgraph-metaprogramming",
+      "repo": "https://github.com/paulhjkelly/taskgraph-metaprogramming",
+      "owner": "paulhjkelly",
+      "description": "The TaskGraph Meta-programming Library is a C++ package that supports run-time code generation - programs that generate code on the fly, then execute it.  And having built a piece of code, you can apply various transformations to it (such as loop interchange and tiling).",
+      "language": "C++",
+      "topics": [],
+      "stars": 9,
+      "lastPush": "2026-10-19",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1007/978-3-540-25935-0_17",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Software Performance Optimisation group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "lsds--teechain",
+      "name": "Teechain",
+      "repo": "https://github.com/lsds/Teechain",
+      "owner": "lsds",
+      "description": "Teechain: A Secure Payment Network with Asynchronous Blockchain Access",
+      "language": "C++",
+      "topics": [],
+      "stars": 56,
+      "lastPush": "2019-08-26",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1145/3341301.3359627",
+      "homepage": "https://www.teechain.network/",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Large-Scale Data & Systems group",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "tensorlayer--tensorlayer",
+      "name": "tensorlayer",
+      "repo": "https://github.com/tensorlayer/TensorLayer",
+      "owner": "tensorlayer",
+      "description": "Deep Learning and Reinforcement Learning Library for Scientists and Engineers ",
+      "language": "Python",
+      "topics": [
+        "a3c",
+        "artificial-intelligence",
+        "chatbot",
+        "deep-learning",
+        "dqn",
+        "gan",
+        "google",
+        "imagenet",
+        "neural-network",
+        "object-detection",
+        "python",
+        "reinforcement-learning",
+        "tensorflow",
+        "tensorflow-tutorial",
+        "tensorflow-tutorials",
+        "tensorlayer"
+      ],
+      "stars": 7387,
+      "lastPush": "2023-02-18",
+      "archived": false,
+      "inactive": true,
+      "doi": "10.1145/3123266.3129391",
+      "homepage": "http://tensorlayerx.com",
+      "featuredMonth": "2019-10",
+      "metadataAvailable": true,
+      "departments": [
+        "data-science-institute"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Data Science Institute",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "thetisproject--thetis",
+      "name": "thetis",
+      "repo": "https://github.com/thetisproject/thetis",
+      "owner": "thetisproject",
+      "description": "Finite element flow solver for simulating coastal and estuarine flows.",
+      "language": "Python",
+      "topics": [],
+      "stars": 86,
+      "lastPush": "2026-10-29",
+      "archived": false,
+      "inactive": false,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "earth-science-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Coastal and ocean modelling",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "fabiopardo--tonic",
+      "name": "tonic",
+      "repo": "https://github.com/fabiopardo/tonic",
+      "owner": "fabiopardo",
+      "description": "Tonic RL library",
+      "language": "Python",
+      "topics": [],
+      "stars": 417,
+      "lastPush": "2024-07-24",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": "2020-09",
+      "metadataAvailable": true,
+      "departments": [
+        "design-engineering"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Robot Intelligence Lab",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "baiwenjia--ukbb_cardiac",
+      "name": "ukbb_cardiac",
+      "repo": "https://github.com/baiwenjia/ukbb_cardiac",
+      "owner": "baiwenjia",
+      "description": "Bai et al. A population-based phenome-wide association study of cardiac and aortic structure and function. Nature Medicine, 2020.",
+      "language": "Python",
+      "topics": [],
+      "stars": 26,
+      "lastPush": "2025-12-19",
+      "archived": false,
+      "inactive": false,
+      "doi": "10.1038/s41591-020-1009-y",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "computing"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Biomedical Image Analysis",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--uvlm",
+      "name": "UVLM",
+      "repo": "https://github.com/ImperialCollegeLondon/UVLM",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": null,
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Loads Control and Aeroelastics Lab",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "vimc--vaultr",
+      "name": "vaultr",
+      "repo": "https://github.com/vimc/vaultr",
+      "owner": "vimc",
+      "description": ":lock: API client for Hashicorp's vault (https://www.vaultproject.io/)",
+      "language": "R",
+      "topics": [],
+      "stars": 26,
+      "lastPush": "2023-11-09",
+      "archived": false,
+      "inactive": true,
+      "doi": null,
+      "homepage": "https://vimc.github.io/vaultr",
+      "featuredMonth": null,
+      "metadataAvailable": true,
+      "departments": [
+        "public-health"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Vaccine Impact Modelling Consortium",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "imperialcollegelondon--winc3d",
+      "name": "WInc3D",
+      "repo": "https://github.com/ImperialCollegeLondon/WInc3D",
+      "owner": "ImperialCollegeLondon",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": null,
+      "lastPush": null,
+      "archived": null,
+      "inactive": null,
+      "doi": "10.1016/j.renene.2018.11.084",
+      "homepage": null,
+      "featuredMonth": null,
+      "metadataAvailable": false,
+      "departments": [
+        "aeronautics"
+      ],
+      "central": false,
+      "attribution": {
+        "group": "Turbulence simulation",
+        "confidence": "medium"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imperial RSE Map</title>
+  <meta name="description" content="Interactive map of Imperial College London departments, coloured by engagement with the central Research Software Engineering team.">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--
+    Graph libraries are vendored (see vendor/README.md) so the site has no
+    runtime dependency on a CDN. Load order matters: fCoSE depends on
+    cose-base, which depends on layout-base.
+  -->
+  <script src="vendor/cytoscape.min.js" defer></script>
+  <script src="vendor/layout-base.js" defer></script>
+  <script src="vendor/cose-base.js" defer></script>
+  <script src="vendor/cytoscape-fcose.js" defer></script>
+  <script src="js/app.js" type="module"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Imperial RSE Map</h1>
+      <p class="subtitle">Departments coloured by engagement with the central Research Software Engineering team</p>
+    </div>
+    <div class="topbar-actions">
+      <button type="button" id="view-toggle" class="btn" aria-pressed="false">Table view</button>
+      <button type="button" id="theme-toggle" class="btn" aria-label="Switch colour theme">Theme</button>
+    </div>
+  </header>
+
+  <section class="controls" aria-label="Filters">
+    <fieldset class="control-group types" id="type-filters">
+      <legend>Offering</legend>
+      <!-- Populated from data/activities.json offeringTypes -->
+    </fieldset>
+
+    <div class="control-group software-legend" id="software-legend" hidden>
+      <span class="legend-title">Research software per department</span>
+      <span class="ramp" aria-hidden="true">
+        <span data-step="1"></span><span data-step="2"></span><span data-step="3"></span><span data-step="4"></span><span data-step="5"></span>
+      </span>
+      <span class="ramp-labels"><span>Fewer</span><span>More</span></span>
+      <span class="legend-note">Grey: none listed. Source: Imperial Research Software Directory; may not involve the RSE team.</span>
+    </div>
+
+    <div class="control-row">
+      <label class="control">
+        <span>Colour by</span>
+        <select id="colour-by">
+          <option value="rse">RSE team offerings</option>
+          <option value="software">Research software</option>
+        </select>
+      </label>
+      <label class="control">
+        <span>Academic year</span>
+        <select id="year-filter"></select>
+      </label>
+      <label class="control">
+        <span>Status</span>
+        <select id="status-filter">
+          <option value="all">All statuses</option>
+          <option value="active">Active</option>
+          <option value="planned">Planned</option>
+          <option value="completed">Completed</option>
+          <option value="unknown">Not recorded</option>
+        </select>
+      </label>
+      <label class="control search">
+        <span>Search</span>
+        <input type="search" id="search" placeholder="Department, activity or software" autocomplete="off">
+      </label>
+      <label class="check">
+        <input type="checkbox" id="show-items">
+        <span id="show-items-label">Show activities as nodes</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="include-mock" checked>
+        <span>Include mock data</span>
+      </label>
+      <button type="button" id="reset-layout" class="btn">Re-arrange</button>
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="stage" aria-label="Department map">
+      <div id="graph" role="img" aria-label="Network map of departments grouped by faculty. Use the table view for an accessible listing."></div>
+      <div id="table-view" class="table-view" hidden></div>
+      <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+      <div id="status-message" class="status-message" hidden></div>
+    </section>
+    <aside id="panel" class="panel" aria-live="polite"></aside>
+  </main>
+
+  <footer class="footer">
+    <span id="provenance-summary"></span>
+    <span>Graph rendering by <a href="https://js.cytoscape.org/">Cytoscape.js</a> with the fCoSE layout.</span>
+  </footer>
+</body>
+</html>

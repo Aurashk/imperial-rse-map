@@ -1,0 +1,11 @@
+{
+  "name": "imperial-rse-map",
+  "private": true,
+  "description": "Interactive map of Imperial College London departments and their engagement with the central RSE team.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "serve": "python3 -m http.server 8000"
+  },
+  "engines": { "node": ">=18" }
+}
