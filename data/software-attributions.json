@@ -6,7 +6,8 @@
     "fields": {
       "departments": "Department ids from departments.json. Use an empty list with \"central\": true for software owned by the central RSE / Research Computing Service.",
       "group": "Research group, lab or centre the attribution is based on.",
-      "confidence": "high = owning group is well known to sit in the department; medium = likely but unconfirmed; low = best guess."
+      "confidence": "high = owning group is well known to sit in the department; medium = likely but unconfirmed; low = best guess.",
+      "rseInvolved": "Optional. true when the central RSE team has worked on the software (for example a project or open-source booster). Such packages are excluded from the map's 'no RSE involvement' ring and tagged instead."
     }
   },
   "owners": {

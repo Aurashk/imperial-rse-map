@@ -1,19 +1,23 @@
 /**
- * Imperial RSE Map – interactive network of College departments, each drawn
- * as a pie chart showing the mix of engagements it has had with the central
- * Research Software Engineering (RSE) team.
+ * Imperial RSE Map – interactive network of College departments showing, in
+ * one picture, what the central Research Software Engineering (RSE) team does
+ * with each department and what research software the department produces
+ * without RSE involvement.
  *
- * Structure
- * ---------
+ * Encoding
+ * --------
  * - Faculties are Cytoscape compound (parent) nodes; departments sit inside.
- * - A single hub node represents the central RSE team. In the default view it
- *   is linked to every department with at least one visible engagement, and
- *   edge width reflects the number of engagements.
- * - Optionally, each activity can be drawn as its own node linked to the
- *   departments it involved, which exposes cross-department work.
- * - A second colouring mode shows research software from the Imperial
- *   Research Software Directory (which may have no RSE involvement), with
- *   departments shaded on a single-hue scale by the number of packages.
+ * - Each department's fill is a pie chart of its engagements with the RSE
+ *   team, one categorical colour per offering type; node size grows with the
+ *   number of engagements. A hollow node has no engagement.
+ * - Each department's ring is shaded on a separate neutral (graphite)
+ *   gradient by the number of research software packages listed in the
+ *   Imperial Research Software Directory that had no RSE involvement. No ring
+ *   means none are listed.
+ * - A hub node represents the RSE team, linked to every department it has
+ *   engaged with; edge width reflects the number of engagements.
+ * - Optionally, activities and software packages can be drawn as their own
+ *   nodes linked to their departments, exposing cross-department work.
  *
  * The full graph is built once. Filters only update node data and CSS
  * classes, so the layout stays stable while the viewer explores; the layout
@@ -41,8 +45,10 @@ const HUB_GROUP_ID = 'group:central';
 const ACTIVITY_PREFIX = 'activity:';
 const HUB_EDGE_PREFIX = 'hub-edge:';
 const SOFTWARE_PREFIX = 'software:';
-const SEQUENTIAL_STEPS = 5;
-const MIN_NODE_SIZE = 30;
+/** Number of steps on the research-software ring gradient. */
+const RING_STEPS = 5;
+const RING_WIDTH = 8;
+const MIN_NODE_SIZE = 34;
 const MAX_NODE_SIZE = 74;
 
 const STATUS_LABELS = Object.freeze({
@@ -88,8 +94,8 @@ const state = {
     includeMock: true,
     query: '',
   },
-  colourBy: 'rse', // 'rse' (offering pie charts) or 'software' (research software counts)
-  showItems: false, // draw activities (or software, in software mode) as their own nodes
+  showActivities: false, // draw activities as their own nodes
+  showSoftware: false, // draw research software packages as their own nodes
   view: 'graph',
   selection: null, // { kind: 'department' | 'activity' | 'software', id } or null
 };
@@ -192,13 +198,33 @@ function aggregateByDepartment(activities) {
   return result;
 }
 
-/** Research software attributed to each department, plus the centrally owned set. */
+/** True when the RSE team is recorded as having worked on the package. */
+function hasRseInvolvement(item) {
+  return item.rseInvolved === true;
+}
+
+/**
+ * Research software attributed to each department.
+ *
+ * @returns {Map<string, {all: object[], independent: object[]}>} `independent`
+ *   holds the packages with no recorded RSE involvement (the ring encoding).
+ */
 function softwareByDepartment() {
-  const result = new Map(state.departments.map((dept) => [dept.id, []]));
+  const result = new Map(state.departments.map((dept) => [dept.id, { all: [], independent: [] }]));
   for (const item of state.software) {
-    for (const deptId of item.departments) result.get(deptId)?.push(item);
+    for (const deptId of item.departments) {
+      const entry = result.get(deptId);
+      if (!entry) continue;
+      entry.all.push(item);
+      if (!hasRseInvolvement(item)) entry.independent.push(item);
+    }
   }
   return result;
+}
+
+/** Maps a package count onto a ring step (1 = fewest); 0 means no ring. */
+function ringStep(count, max) {
+  return count > 0 ? Math.max(1, Math.ceil((count / max) * RING_STEPS)) : 0;
 }
 
 function softwareMatchesQuery(item, query) {
@@ -220,8 +246,8 @@ function activityMatchesQuery(activity, query) {
 function departmentMatchesQuery(dept, query, visibleActivities, software = []) {
   if (matchesQuery(dept.name, query) || matchesQuery(dept.shortName, query)) return true;
   if (matchesQuery(state.groupsById.get(dept.group)?.name, query)) return true;
-  if (state.colourBy === 'software') return software.some((item) => softwareMatchesQuery(item, query));
-  return visibleActivities.some((activity) => activityMatchesQuery(activity, query));
+  return visibleActivities.some((activity) => activityMatchesQuery(activity, query))
+    || software.some((item) => softwareMatchesQuery(item, query));
 }
 
 /* ------------------------------------------------------------------------ */
@@ -353,21 +379,25 @@ function buildStyle() {
         'text-wrap': 'wrap',
         'text-max-width': 96,
         'background-color': cssVar('--surface'),
-        'border-color': halo,
-        'border-width': 2,
+        'border-color': cssVar('--graph-node-idle-border'),
+        'border-width': 1,
+        'border-style': 'dashed',
         'pie-size': '100%',
-        'transition-property': 'width, height, opacity',
+        // Only opacity animates: size changes must be immediate so the layout
+        // measures the final node sizes when it fits the view.
+        'transition-property': 'opacity',
         'transition-duration': 200,
       },
     },
     {
+      // No RSE engagement: hollow node with a muted label.
       selector: 'node[kind = "department"].idle',
-      style: {
-        'background-color': cssVar('--graph-node-idle'),
-        'border-color': cssVar('--graph-node-idle-border'),
-        'border-width': 1,
-        color: cssVar('--ink-muted'),
-      },
+      style: { color: cssVar('--ink-muted') },
+    },
+    {
+      // Engaged departments get a solid hairline so the pie reads as a disc.
+      selector: 'node[kind = "department"].engaged',
+      style: { 'border-style': 'solid', 'border-color': halo, 'border-width': 2 },
     },
     {
       selector: 'node[kind = "hub"]',
@@ -415,7 +445,7 @@ function buildStyle() {
         'font-size': 8,
         'text-valign': 'bottom',
         'text-margin-y': 2,
-        'background-color': cssVar('--seq-3'),
+        'background-color': cssVar('--sw-3'),
         'border-color': halo,
         'border-width': 1.5,
       },
@@ -442,7 +472,7 @@ function buildStyle() {
     },
     {
       selector: 'edge[kind = "software-edge"]',
-      style: { width: 1, opacity: 0.6, 'line-color': cssVar('--seq-2') },
+      style: { width: 1, opacity: 0.6, 'line-color': cssVar('--sw-2') },
     },
     {
       selector: '.hidden',
@@ -455,14 +485,6 @@ function buildStyle() {
     {
       selector: '.dim',
       style: { opacity: 0.18 },
-    },
-    {
-      selector: 'node.selected',
-      style: {
-        'border-color': cssVar('--focus'),
-        'border-width': 4,
-        'z-index': 20,
-      },
     },
     {
       selector: 'edge.highlight',
@@ -478,11 +500,15 @@ function buildStyle() {
   });
   style.push({ selector: 'node[kind = "department"]', style: pieStyle });
 
-  // Single-hue scale used when departments are coloured by research software count.
-  for (let step = 1; step <= SEQUENTIAL_STEPS; step += 1) {
+  // Research-software ring: a neutral gradient kept apart from the offering hues.
+  for (let step = 1; step <= RING_STEPS; step += 1) {
     style.push({
-      selector: `node[kind = "department"].seq-${step}`,
-      style: { 'background-color': cssVar(`--seq-${step}`) },
+      selector: `node[kind = "department"].ring-${step}`,
+      style: {
+        'border-style': 'solid',
+        'border-width': RING_WIDTH,
+        'border-color': cssVar(`--sw-${step}`),
+      },
     });
   }
 
@@ -491,6 +517,17 @@ function buildStyle() {
     style.push({ selector: `node.activity[type = "${type.id}"]`, style: { 'background-color': colour } });
     style.push({ selector: `edge[kind = "activity-edge"][type = "${type.id}"]`, style: { 'line-color': colour } });
   }
+
+  // Selection is drawn as an outline beyond the ring so the ring stays readable.
+  style.push({
+    selector: 'node.selected',
+    style: {
+      'outline-color': cssVar('--focus'),
+      'outline-width': 3,
+      'outline-offset': 2,
+      'z-index': 20,
+    },
+  });
 
   return style;
 }
@@ -514,8 +551,28 @@ function createGraph() {
   bindGraphEvents();
 }
 
-/** Runs the force-directed layout on the nodes currently drawn. */
-function runLayout({ randomise = false } = {}) {
+/** Maximum extra layout attempts made when containers end up overlapping. */
+const MAX_LAYOUT_RETRIES = 4;
+
+/** True when any two faculty (or hub) containers overlap. */
+function containersOverlap() {
+  const boxes = cy.nodes('[kind = "group"], [kind = "hub-group"]').not('.hidden').map((node) => node.boundingBox());
+  for (let i = 0; i < boxes.length; i += 1) {
+    for (let j = i + 1; j < boxes.length; j += 1) {
+      const a = boxes[i];
+      const b = boxes[j];
+      if (a.x1 < b.x2 && b.x1 < a.x2 && a.y1 < b.y2 && b.y1 < a.y2) return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Runs the force-directed layout on the nodes currently drawn. fCoSE is
+ * stochastic and occasionally leaves containers overlapping, so the result
+ * is checked and the layout re-run from a fresh random start if needed.
+ */
+function runLayout({ randomise = false, attempt = 0 } = {}) {
   if (!cy) return;
   const drawn = cy.elements().not('.hidden');
   const hasFcose = typeof window.cytoscapeFcose === 'function';
@@ -544,7 +601,17 @@ function runLayout({ randomise = false } = {}) {
       }
     : { name: 'cose', animate: false, fit: true, padding: 30, nodeDimensionsIncludeLabels: true };
 
-  drawn.layout(options).run();
+  const layout = drawn.layout(options);
+  layout.one('layoutstop', () => {
+    if (attempt < MAX_LAYOUT_RETRIES && containersOverlap()) {
+      runLayout({ randomise: true, attempt: attempt + 1 });
+      return;
+    }
+    // Fit again from the settled positions: the layout's own fit can be computed
+    // before compound containers have grown to their final size.
+    cy.animate({ fit: { eles: cy.elements().not('.hidden'), padding: 40 }, duration: 250 });
+  });
+  layout.run();
 }
 
 /* ------------------------------------------------------------------------ */
@@ -558,7 +625,6 @@ function refresh({ relayout = false } = {}) {
   const softwareByDept = softwareByDepartment();
   const query = state.filters.query.trim().toLowerCase();
 
-  updateModeControls();
   updateGraph(visible, byDept, softwareByDept, query, relayout);
   updateChipCounts();
   renderTable(byDept, softwareByDept, query);
@@ -575,11 +641,15 @@ function nodeSize(count, max) {
   return count === 0 ? MIN_NODE_SIZE : MIN_NODE_SIZE + (MAX_NODE_SIZE - MIN_NODE_SIZE) * Math.sqrt(count / max);
 }
 
+/** Largest independent-software count of any department (at least 1). */
+function maxIndependentSoftware(softwareByDept) {
+  return Math.max(1, ...[...softwareByDept.values()].map((entry) => entry.independent.length));
+}
+
 function updateGraph(visible, byDept, softwareByDept, query, relayout) {
   if (!cy) return;
-  const softwareMode = state.colourBy === 'software';
   const maxTotal = Math.max(1, ...[...byDept.values()].map((entry) => entry.total));
-  const maxSoftware = Math.max(1, ...[...softwareByDept.values()].map((items) => items.length));
+  const maxSoftware = maxIndependentSoftware(softwareByDept);
   const visibleIds = new Set(visible.map((activity) => activity.id));
   const before = drawnItemsSignature();
 
@@ -588,33 +658,32 @@ function updateGraph(visible, byDept, softwareByDept, query, relayout) {
       const entry = byDept.get(dept.id);
       const software = softwareByDept.get(dept.id);
       const node = cy.getElementById(dept.id);
-      const count = softwareMode ? software.length : entry.total;
 
-      const data = { total: count, size: nodeSize(count, softwareMode ? maxSoftware : maxTotal) };
+      const data = { total: entry.total, size: nodeSize(entry.total, maxTotal) };
       state.types.forEach((type, index) => {
         const typeCount = entry.byType.get(type.id) ?? 0;
-        data[`pie${index + 1}`] = softwareMode || entry.total === 0 ? 0 : (typeCount / entry.total) * 100;
+        data[`pie${index + 1}`] = entry.total === 0 ? 0 : (typeCount / entry.total) * 100;
       });
       node.data(data);
-      node.toggleClass('idle', count === 0);
+      node.toggleClass('idle', entry.total === 0);
+      node.toggleClass('engaged', entry.total > 0);
 
-      // Quantise software counts onto the sequential scale (step 1 = fewest).
-      const step = softwareMode && count > 0 ? Math.max(1, Math.ceil((count / maxSoftware) * SEQUENTIAL_STEPS)) : 0;
-      for (let i = 1; i <= SEQUENTIAL_STEPS; i += 1) node.toggleClass(`seq-${i}`, step === i);
+      const step = ringStep(software.independent.length, maxSoftware);
+      for (let i = 1; i <= RING_STEPS; i += 1) node.toggleClass(`ring-${i}`, step === i);
 
       const hubEdge = cy.getElementById(`${HUB_EDGE_PREFIX}${dept.id}`);
       hubEdge.data('weight', entry.total);
-      // Hub edges always take part in the layout (keeping it stable between modes and
-      // filters) but are only visible when they represent current RSE engagement.
-      hubEdge.toggleClass('ghost', softwareMode || state.showItems || entry.total === 0);
+      // Hub edges always take part in the layout (keeping it stable as filters
+      // change) but are only visible when they represent current RSE engagement.
+      hubEdge.toggleClass('ghost', state.showActivities || entry.total === 0);
 
-      const dim = query !== '' && !departmentMatchesQuery(dept, query, entry.activities, software);
+      const dim = query !== '' && !departmentMatchesQuery(dept, query, entry.activities, software.all);
       node.toggleClass('dim', dim);
     }
 
     cy.nodes('.activity').forEach((node) => {
       const activity = state.activitiesById.get(node.data('activityId'));
-      const show = !softwareMode && state.showItems && visibleIds.has(activity.id);
+      const show = state.showActivities && visibleIds.has(activity.id);
       node.toggleClass('hidden', !show);
       node.connectedEdges().toggleClass('hidden', !show);
       node.toggleClass('dim', show && query !== '' && !activityMatchesQuery(activity, query));
@@ -622,7 +691,7 @@ function updateGraph(visible, byDept, softwareByDept, query, relayout) {
 
     cy.nodes('.software').forEach((node) => {
       const item = state.softwareById.get(node.data('softwareId'));
-      const show = softwareMode && state.showItems && (item.central || item.departments.length > 0);
+      const show = state.showSoftware && (item.central || item.departments.length > 0);
       node.toggleClass('hidden', !show);
       node.connectedEdges().toggleClass('hidden', !show);
       node.toggleClass('dim', show && query !== '' && !softwareMatchesQuery(item, query));
@@ -633,18 +702,6 @@ function updateGraph(visible, byDept, softwareByDept, query, relayout) {
 
   // Item nodes change what is drawn, so the layout must adapt to them.
   if (relayout || before !== drawnItemsSignature()) runLayout();
-}
-
-/** Shows the controls relevant to the current colouring mode. */
-function updateModeControls() {
-  const softwareMode = state.colourBy === 'software';
-  $('#type-filters').hidden = softwareMode;
-  $('#software-legend').hidden = !softwareMode;
-  for (const id of ['#year-filter', '#status-filter', '#include-mock']) $(id).disabled = softwareMode;
-  $('#show-items-label').textContent = softwareMode ? 'Show software as nodes' : 'Show activities as nodes';
-  $('.subtitle').textContent = softwareMode
-    ? 'Departments shaded by research software listed in the Imperial Research Software Directory'
-    : 'Departments coloured by engagement with the central Research Software Engineering team';
 }
 
 function applySelectionClasses() {
@@ -678,9 +735,9 @@ function updateChipCounts() {
     chip.querySelector('.swatch').style.background = typeColour(type.id);
   }
 
-  // Sequential legend swatches follow the theme too.
-  document.querySelectorAll('#software-legend [data-step]').forEach((swatch) => {
-    swatch.style.background = cssVar(`--seq-${swatch.dataset.step}`);
+  // Ring legend swatches follow the theme too.
+  document.querySelectorAll('#ring-legend [data-step]').forEach((swatch) => {
+    swatch.style.borderColor = cssVar(`--sw-${swatch.dataset.step}`);
   });
 }
 
@@ -705,10 +762,8 @@ function renderPanel(visible, byDept, softwareByDept) {
     panel.innerHTML = activityPanel(state.activitiesById.get(selection.id), visible);
   } else if (selection?.kind === 'software' && state.softwareById.has(selection.id)) {
     panel.innerHTML = softwarePanel(state.softwareById.get(selection.id));
-  } else if (state.colourBy === 'software') {
-    panel.innerHTML = softwareOverviewPanel(softwareByDept);
   } else {
-    panel.innerHTML = overviewPanel(visible, byDept);
+    panel.innerHTML = overviewPanel(visible, byDept, softwareByDept);
   }
 }
 
@@ -719,6 +774,7 @@ function softwareTags(item) {
   if (item.archived) tags.push('<span class="tag">Archived</span>');
   else if (item.inactive) tags.push('<span class="tag">No commits in 12 months</span>');
   if (item.featuredMonth) tags.push(`<span class="tag public">Software of the month ${esc(item.featuredMonth)}</span>`);
+  if (hasRseInvolvement(item)) tags.push('<span class="tag public">RSE team involved</span>');
   if (item.attribution?.confidence) tags.push(`<span class="tag">${esc(item.attribution.confidence)}-confidence attribution</span>`);
   return tags.join('');
 }
@@ -727,7 +783,7 @@ function softwareListItem(item) {
   return `
     <li class="item">
       <div class="item-title">
-        <span class="swatch" style="background:${esc(cssVar('--seq-3'))};border-radius:2px" aria-hidden="true"></span>
+        <span class="swatch" style="background:${esc(cssVar('--sw-3'))};border-radius:2px" aria-hidden="true"></span>
         <button type="button" data-select-software="${esc(item.id)}">${esc(item.name)}</button>
       </div>
       ${item.description ? `<p class="item-body">${esc(item.description)}</p>` : ''}
@@ -742,35 +798,46 @@ function topCounts(values, limit) {
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, limit);
 }
 
-function softwareOverviewPanel(softwareByDept) {
+function departmentLinkRow(dept, detail) {
+  return `<li class="item"><button type="button" class="dept-link" data-select-department="${esc(dept.id)}">${esc(dept.name)}</button> <span class="meta">· ${detail}</span></li>`;
+}
+
+/** Overview section summarising research software alongside RSE engagement. */
+function softwareOverviewSection(byDept, softwareByDept) {
+  if (state.software.length === 0) return '';
   const attributed = state.software.filter((item) => item.departments.length > 0);
   const central = state.software.filter((item) => item.central);
   const unattributed = state.software.filter((item) => item.departments.length === 0 && !item.central);
-  const engaged = [...softwareByDept.values()].filter((items) => items.length > 0).length;
+  const independent = state.software.filter((item) => !hasRseInvolvement(item)).length;
   const active = state.software.filter((item) => item.inactive === false && !item.archived).length;
   const source = safeUrl(state.softwareMeta.source);
 
+  // Departments producing software the RSE team has not engaged with yet:
+  // the most direct outreach opportunities.
+  const opportunities = state.departments
+    .map((dept) => ({ dept, count: softwareByDept.get(dept.id).independent.length, rse: byDept.get(dept.id).total }))
+    .filter((row) => row.count > 0 && row.rse === 0)
+    .sort((a, b) => b.count - a.count || a.dept.name.localeCompare(b.dept.name));
+
   const top = state.departments
-    .map((dept) => ({ dept, count: softwareByDept.get(dept.id).length }))
+    .map((dept) => ({ dept, count: softwareByDept.get(dept.id).independent.length }))
     .filter((row) => row.count > 0)
     .sort((a, b) => b.count - a.count || a.dept.name.localeCompare(b.dept.name))
-    .slice(0, 8);
+    .slice(0, 6);
 
   const languages = topCounts(state.software.map((item) => item.language), 8);
 
   return `
-    <h2>Research software</h2>
-    <p class="meta">From the ${source ? `<a href="${esc(source)}" target="_blank" rel="noopener">Imperial Research Software Directory</a>` : 'Imperial Research Software Directory'}${state.softwareMeta.generated ? ` · imported ${esc(state.softwareMeta.generated)}` : ''}</p>
-    <p class="notice">Listed software may have had no central RSE involvement. Departments are inferred from the owning GitHub account or group and need verifying.</p>
+    <h3>Research software without RSE involvement</h3>
+    <p class="meta">Shown as the grey ring around each department. From the ${source ? `<a href="${esc(source)}" target="_blank" rel="noopener">Imperial Research Software Directory</a>` : 'Imperial Research Software Directory'}${state.softwareMeta.generated ? `, imported ${esc(state.softwareMeta.generated)}` : ''}; departments are inferred from the owning GitHub account or group.</p>
     <div class="stats">
-      <div class="stat"><span class="value">${state.software.length}</span><span class="label">Packages</span></div>
-      <div class="stat"><span class="value">${engaged}<small>/${state.departments.length}</small></span><span class="label">Departments</span></div>
+      <div class="stat"><span class="value">${independent}</span><span class="label">Packages</span></div>
       <div class="stat"><span class="value">${active}</span><span class="label">Active in last year</span></div>
+      <div class="stat"><span class="value">${opportunities.length}</span><span class="label">Depts with no RSE link</span></div>
     </div>
+    ${opportunities.length ? `<h3>Software but no RSE engagement</h3><ul class="item-list">${opportunities.map((row) => departmentLinkRow(row.dept, pluralise(row.count, 'package'))).join('')}</ul>` : ''}
     <h3>Most software</h3>
-    <ul class="item-list">${top
-      .map((row) => `<li class="item"><button type="button" class="dept-link" data-select-department="${esc(row.dept.id)}">${esc(row.dept.name)}</button> <span class="meta">· ${pluralise(row.count, 'package')}</span></li>`)
-      .join('')}</ul>
+    <ul class="item-list">${top.map((row) => departmentLinkRow(row.dept, pluralise(row.count, 'package'))).join('')}</ul>
     <h3>Languages</h3>
     <div class="tags" style="margin-left:0">${languages.map(([language, count]) => `<span class="tag">${esc(language)} · ${count}</span>`).join('')}</div>
     ${central.length ? `<h3>Owned by Research Computing</h3><ul class="item-list">${central.map(softwareListItem).join('')}</ul>` : ''}
@@ -840,7 +907,7 @@ function activityListItem(activity) {
     </li>`;
 }
 
-function overviewPanel(visible, byDept) {
+function overviewPanel(visible, byDept, softwareByDept) {
   const engaged = [...byDept.values()].filter((entry) => entry.total > 0).length;
   const sessions = visible
     .filter((activity) => activity.type === 'code_surgery' && Number.isInteger(activity.sessions))
@@ -882,18 +949,19 @@ function overviewPanel(visible, byDept) {
     <h3>Most engaged</h3>
     ${top.length
       ? `<ul class="item-list">${top
-          .map((row) => `<li class="item"><button type="button" class="dept-link" data-select-department="${esc(row.dept.id)}">${esc(row.dept.name)}</button> <span class="meta">· ${pluralise(row.total, 'activity', 'activities')}</span></li>`)
+          .map((row) => departmentLinkRow(row.dept, pluralise(row.total, 'activity', 'activities')))
           .join('')}</ul>`
       : '<p class="meta">No activities match the current filters.</p>'}
+    ${softwareOverviewSection(byDept, softwareByDept)}
     <h3>Services offered</h3>
     <ul class="item-list">${services}</ul>
     ${errors.length || warnings.length
       ? `<h3>Data checks</h3><ul class="item-list">${[...errors.map((e) => `<li class="item">Error: ${esc(e)}</li>`), ...warnings.map((w) => `<li class="item meta">${esc(w)}</li>`)].join('')}</ul>`
       : ''}
-    <p class="meta">Select a department or activity on the map for details.</p>`;
+    <p class="meta">Select a department, activity or package on the map for details.</p>`;
 }
 
-function departmentPanel(dept, entry, software = []) {
+function departmentPanel(dept, entry, software = { all: [], independent: [] }) {
   const group = state.groupsById.get(dept.group);
   const url = safeUrl(dept.url);
   const all = state.activities.filter((activity) => activity.departments.includes(dept.id));
@@ -910,22 +978,21 @@ function departmentPanel(dept, entry, software = []) {
     .map(activityListItem)
     .join('');
 
+  const involved = software.all.length - software.independent.length;
   const softwareSection = `
-    <h3>Research software (${software.length})</h3>
-    ${software.length
-      ? `<p class="meta">From the Imperial Research Software Directory; may not involve the RSE team.</p><ul class="item-list">${[...software]
+    <h3>Research software (${software.all.length})</h3>
+    ${software.all.length
+      ? `<p class="meta">From the Imperial Research Software Directory. ${pluralise(software.independent.length, 'package has', 'packages have')} no recorded RSE involvement${involved ? `; ${involved} involved the RSE team` : ''}.</p><ul class="item-list">${[...software.all]
           .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || a.name.localeCompare(b.name))
           .map(softwareListItem)
           .join('')}</ul>`
       : '<p class="meta">No software from this department is listed in the Imperial Research Software Directory yet.</p>'}`;
-  const softwareFirst = state.colourBy === 'software';
 
   return `
     <button type="button" class="btn back" data-clear-selection>← Overview</button>
     <h2>${esc(dept.name)}</h2>
     <p class="meta">${esc(group?.name ?? '')}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">Department website</a>` : ''}</p>
     ${dept.verify ? '<p class="notice">This department’s name or placement is flagged for verification.</p>' : ''}
-    ${softwareFirst ? softwareSection : ''}
     <h3>RSE team engagement</h3>
     <div class="stats">
       <div class="stat"><span class="value">${entry.total}</span><span class="label">Shown</span></div>
@@ -936,7 +1003,7 @@ function departmentPanel(dept, entry, software = []) {
     <h3>Activities</h3>
     ${items ? `<ul class="item-list">${items}</ul>` : '<p class="meta">No RSE activity recorded for the current filters.</p>'}
     ${hidden > 0 ? `<p class="meta">${pluralise(hidden, 'further activity is', 'further activities are')} hidden by the current filters.</p>` : ''}
-    ${softwareFirst ? '' : softwareSection}`;
+    ${softwareSection}`;
 }
 
 function activityPanel(activity, visible) {
@@ -985,10 +1052,10 @@ function renderTable(byDept, softwareByDept, query) {
 
   const rows = state.groups
     .flatMap((group) => state.departments.filter((dept) => dept.group === group.id))
-    .filter((dept) => query === '' || departmentMatchesQuery(dept, query, byDept.get(dept.id).activities, softwareByDept.get(dept.id)))
+    .filter((dept) => query === '' || departmentMatchesQuery(dept, query, byDept.get(dept.id).activities, softwareByDept.get(dept.id).all))
     .map((dept) => {
       const entry = byDept.get(dept.id);
-      const softwareCount = softwareByDept.get(dept.id).length;
+      const softwareCount = softwareByDept.get(dept.id).independent.length;
       grandTotal += entry.total;
       softwareTotal += softwareCount;
       const cells = state.types
@@ -1012,8 +1079,8 @@ function renderTable(byDept, softwareByDept, query) {
 
   container.innerHTML = `
     <table>
-      <caption class="meta" style="text-align:left;padding-bottom:6px">RSE activities per department for the current filters (an activity involving several departments is counted once for each), and research software listed in the Imperial Research Software Directory.</caption>
-      <thead><tr><th scope="col">Department</th><th scope="col">Faculty</th>${header}<th scope="col">RSE total</th><th scope="col">Research software</th></tr></thead>
+      <caption class="meta" style="text-align:left;padding-bottom:6px">RSE activities per department for the current filters (an activity involving several departments is counted once for each), and research software listed in the Imperial Research Software Directory with no recorded RSE involvement.</caption>
+      <thead><tr><th scope="col">Department</th><th scope="col">Faculty</th>${header}<th scope="col">RSE total</th><th scope="col">Software without RSE</th></tr></thead>
       <tbody>${rows}</tbody>
       <tfoot><tr><td><strong>Total</strong></td><td></td>${footer}<td><strong>${grandTotal}</strong></td><td><strong>${softwareTotal}</strong></td></tr></tfoot>
     </table>`;
@@ -1094,12 +1161,6 @@ function positionTooltip(position) {
 }
 
 function tooltipHtml(data) {
-  if (data.kind === 'department' && state.colourBy === 'software') {
-    const dept = state.departmentsById.get(data.id);
-    const items = softwareByDepartment().get(data.id);
-    const languages = topCounts(items.map((item) => item.language), 3).map(([language]) => language).join(', ');
-    return `<strong>${esc(dept.name)}</strong>${pluralise(items.length, 'research software package')}${languages ? `<br><span class="meta">${esc(languages)}</span>` : ''}`;
-  }
   if (data.kind === 'software') {
     const item = state.softwareById.get(data.softwareId);
     return `<strong>${esc(item.name)}</strong>${item.description ? esc(item.description.slice(0, 140)) : ''}`;
@@ -1112,7 +1173,9 @@ function tooltipHtml(data) {
       .filter((row) => row.count > 0)
       .map((row) => `<li>${typeSwatch(row.type.id)}${esc(row.type.label)}: <strong>${row.count}</strong></li>`)
       .join('');
-    return `<strong>${esc(dept.name)}</strong>${rows ? `<ul>${rows}</ul>` : '<span class="meta">No activity for current filters</span>'}`;
+    const software = softwareByDepartment().get(data.id).independent;
+    const softwareRow = `<li><span class="swatch ring" style="border-color:${esc(cssVar('--sw-3'))}" aria-hidden="true"></span>Software without RSE: <strong>${software.length}</strong></li>`;
+    return `<strong>${esc(dept.name)}</strong><ul>${rows || '<li class="meta">No RSE activity for current filters</li>'}${softwareRow}</ul>`;
   }
   if (data.kind === 'activity') {
     const activity = state.activitiesById.get(data.activityId);
@@ -1173,18 +1236,18 @@ function buildControls() {
     if (dept) select({ kind: 'department', id: dept.id });
   });
 
-  $('#show-items').addEventListener('change', (event) => {
-    state.showItems = event.target.checked;
+  $('#show-activities').addEventListener('change', (event) => {
+    state.showActivities = event.target.checked;
     refresh();
   });
 
-  const colourBy = $('#colour-by');
-  colourBy.querySelector('option[value="software"]').disabled = state.software.length === 0;
-  colourBy.addEventListener('change', () => {
-    state.colourBy = colourBy.value === 'software' ? 'software' : 'rse';
-    if (state.selection?.kind === 'activity' || state.selection?.kind === 'software') state.selection = null;
+  const showSoftware = $('#show-software');
+  showSoftware.disabled = state.software.length === 0;
+  showSoftware.addEventListener('change', () => {
+    state.showSoftware = showSoftware.checked;
     refresh();
   });
+  $('#ring-legend').hidden = state.software.length === 0;
 
   $('#include-mock').addEventListener('change', (event) => {
     state.filters.includeMock = event.target.checked;
@@ -1314,11 +1377,6 @@ async function main() {
   buildControls();
   createGraph();
   state.selection = selectionFromHash();
-  // A software deep link only makes sense in software mode.
-  if (state.selection?.kind === 'software') {
-    state.colourBy = 'software';
-    $('#colour-by').value = 'software';
-  }
   refresh();
   runLayout({ randomise: true });
 }

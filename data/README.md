@@ -84,3 +84,8 @@ Repositories it cannot attribute are listed at the end of its output and on the
 map's research-software overview. To fix one, add a rule to
 `software-attributions.json` – under `owners` for a whole GitHub account, or
 under `repos` for a single repository – and re-run the script.
+
+On the map, each department's **ring** counts its packages with no recorded
+RSE involvement. When the RSE team has worked on a package, add
+`"rseInvolved": true` to its rule under `repos` and re-run the script; the
+package then leaves the ring and is tagged "RSE team involved" instead.

@@ -31,12 +31,16 @@
   --type-programme: #008300;
   --type-open_source_booster: #6250d6;
 
-  /* Sequential ramp (single hue, light to dark) for research-software counts. */
-  --seq-1: #86b6ef;
-  --seq-2: #5598e7;
-  --seq-3: #2a78d6;
-  --seq-4: #1c5cab;
-  --seq-5: #104281;
+  /*
+   * Research-software ring: a neutral graphite gradient, deliberately free of
+   * hue so it never competes with the offering colours. Step 1 = fewest
+   * packages; every step clears 2:1 against the surface.
+   */
+  --sw-1: #a8a69d;
+  --sw-2: #8c8a82;
+  --sw-3: #706e68;
+  --sw-4: #55544f;
+  --sw-5: #3a3936;
 
   /* Graph chrome. */
   --graph-node-idle: #d9d8d1;
@@ -79,11 +83,11 @@
     --type-programme: #008300;
     --type-open_source_booster: #9085e9;
 
-    --seq-1: #184f95;
-    --seq-2: #256abf;
-    --seq-3: #3987e5;
-    --seq-4: #6da7ec;
-    --seq-5: #9ec5f4;
+    --sw-1: #5f5d58;
+    --sw-2: #7c7a73;
+    --sw-3: #9a988f;
+    --sw-4: #b8b6ad;
+    --sw-5: #d6d4cc;
 
     --graph-node-idle: #3a3a37;
     --graph-node-idle-border: #55544f;
@@ -122,11 +126,11 @@
   --type-programme: #008300;
   --type-open_source_booster: #9085e9;
 
-  --seq-1: #184f95;
-  --seq-2: #256abf;
-  --seq-3: #3987e5;
-  --seq-4: #6da7ec;
-  --seq-5: #9ec5f4;
+  --sw-1: #5f5d58;
+  --sw-2: #7c7a73;
+  --sw-3: #9a988f;
+  --sw-4: #b8b6ad;
+  --sw-5: #d6d4cc;
 
   --graph-node-idle: #3a3a37;
   --graph-node-idle-border: #55544f;
@@ -284,25 +288,33 @@ a {
   box-shadow: inset 0 0 0 2px var(--ink-muted);
 }
 
-.software-legend {
+.ring-legend {
   align-items: center;
-  gap: 8px 12px;
+  gap: 6px 10px;
 }
 
-.software-legend .legend-title {
+.ring-legend .legend-title {
   color: var(--ink-secondary);
   font-weight: 600;
 }
 
 .ramp {
   display: inline-flex;
-  gap: 2px;
+  gap: 4px;
 }
 
+/* Each legend step is drawn as a small ring, matching the map encoding. */
 .ramp span {
-  width: 28px;
-  height: 12px;
-  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.swatch.ring {
+  background: transparent;
+  border: 3px solid;
 }
 
 .ramp-labels {

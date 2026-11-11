@@ -265,6 +265,9 @@ export function validateData(departmentsDoc, activitiesDoc, softwareDoc = { soft
     for (const deptId of item.departments) {
       if (!departmentIds.has(deptId)) errors.push(`${where}: unknown department "${deptId}".`);
     }
+    if (item.rseInvolved !== undefined && typeof item.rseInvolved !== 'boolean') {
+      errors.push(`${where}: "rseInvolved" must be true or false.`);
+    }
     if (item.departments.length === 0 && !item.central) unattributed += 1;
   }
   if (unattributed > 0) {

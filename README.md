@@ -5,18 +5,21 @@ showing where the central Research Software Engineering (RSE) team is active
 and what research software each department produces.
 
 - **Faculties** are drawn as containers holding their **departments**.
-- In **RSE team offerings** mode, each department is a pie chart of the
-  team's engagements with it (collaborative projects, code surgeries,
-  training, sprints, community events, experience programme placements and
-  open-source boosters). Node size reflects the number of engagements; grey
-  nodes have none. The central team sits in the middle, linked to every
-  department it has worked with.
-- In **Research software** mode, departments are shaded by the number of
-  packages listed in the
-  [Imperial Research Software Directory](https://github.com/ImperialCollegeLondon/research-software-directory),
-  whether or not the RSE team was involved.
+- Everything is shown on one map. Each department's **fill** is a pie chart
+  of its engagements with the central RSE team (collaborative projects, code
+  surgeries, training, sprints, community events, experience programme
+  placements and open-source boosters), and node size grows with the number
+  of engagements. A hollow node has none.
+- Each department's **ring** is shaded on a separate grey gradient by how
+  many packages it has in the
+  [Imperial Research Software Directory](https://github.com/ImperialCollegeLondon/research-software-directory)
+  with no recorded RSE involvement. So a dark ring around a hollow node marks
+  a department that writes plenty of software but has not yet worked with the
+  team; the overview panel lists these.
+- The central team sits in the middle, linked to every department it has
+  worked with.
 - Filters for offering, academic year, status and mock data; free-text search;
-  optional activity/software nodes to expose cross-department work; an
+  optional activity and software nodes to expose cross-department work; an
   accessible table view; light and dark themes; and shareable deep links such
   as `#department=physics`.
 

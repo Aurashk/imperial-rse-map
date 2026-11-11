@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Imperial RSE Map</title>
-  <meta name="description" content="Interactive map of Imperial College London departments, coloured by engagement with the central Research Software Engineering team.">
+  <meta name="description" content="Interactive map of Imperial College London departments showing engagement with the central Research Software Engineering team alongside research software produced without it.">
   <link rel="stylesheet" href="css/styles.css">
   <!--
     Graph libraries are vendored (see vendor/README.md) so the site has no
@@ -21,7 +21,7 @@
   <header class="topbar">
     <div class="brand">
       <h1>Imperial RSE Map</h1>
-      <p class="subtitle">Departments coloured by engagement with the central Research Software Engineering team</p>
+      <p class="subtitle">Each department’s colours show its work with the central Research Software Engineering team; the grey ring shows research software it produces without RSE involvement</p>
     </div>
     <div class="topbar-actions">
       <button type="button" id="view-toggle" class="btn" aria-pressed="false">Table view</button>
@@ -35,23 +35,17 @@
       <!-- Populated from data/activities.json offeringTypes -->
     </fieldset>
 
-    <div class="control-group software-legend" id="software-legend" hidden>
-      <span class="legend-title">Research software per department</span>
+    <div class="control-group ring-legend" id="ring-legend">
+      <span class="legend-title">Ring</span>
+      <span class="legend-note">Research software with no RSE involvement</span>
       <span class="ramp" aria-hidden="true">
         <span data-step="1"></span><span data-step="2"></span><span data-step="3"></span><span data-step="4"></span><span data-step="5"></span>
       </span>
-      <span class="ramp-labels"><span>Fewer</span><span>More</span></span>
-      <span class="legend-note">Grey: none listed. Source: Imperial Research Software Directory; may not involve the RSE team.</span>
+      <span class="ramp-labels"><span>Fewer</span><span aria-hidden="true">→</span><span>More packages</span></span>
+      <span class="legend-note">No ring: none listed · Hollow centre: no RSE engagement</span>
     </div>
 
     <div class="control-row">
-      <label class="control">
-        <span>Colour by</span>
-        <select id="colour-by">
-          <option value="rse">RSE team offerings</option>
-          <option value="software">Research software</option>
-        </select>
-      </label>
       <label class="control">
         <span>Academic year</span>
         <select id="year-filter"></select>
@@ -71,8 +65,12 @@
         <input type="search" id="search" placeholder="Department, activity or software" autocomplete="off">
       </label>
       <label class="check">
-        <input type="checkbox" id="show-items">
-        <span id="show-items-label">Show activities as nodes</span>
+        <input type="checkbox" id="show-activities">
+        <span>Show activities as nodes</span>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="show-software">
+        <span>Show software as nodes</span>
       </label>
       <label class="check">
         <input type="checkbox" id="include-mock" checked>

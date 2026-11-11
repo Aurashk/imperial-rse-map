@@ -127,10 +127,11 @@ def attribute(slug: str, owners: dict[str, dict], repos: dict[str, dict]) -> dic
     """Apply the most specific matching attribution rule to a repository."""
     rule = repos.get(slug.lower()) or owners.get(slug.split("/")[0].lower())
     if not rule:
-        return {"departments": [], "central": False, "group": None, "confidence": None}
+        return {"departments": [], "central": False, "rseInvolved": False, "group": None, "confidence": None}
     return {
         "departments": list(rule.get("departments", [])),
         "central": bool(rule.get("central", False)),
+        "rseInvolved": bool(rule.get("rseInvolved", False)),
         "group": rule.get("group"),
         "confidence": rule.get("confidence"),
     }
@@ -184,6 +185,7 @@ def build(rows: list[dict[str, str]], metadata: dict[str, dict], attributions_pa
                 "metadataAvailable": bool(meta),
                 "departments": attribution["departments"],
                 "central": attribution["central"],
+                "rseInvolved": attribution["rseInvolved"],
                 "attribution": {"group": attribution["group"], "confidence": attribution["confidence"]},
             }
         )

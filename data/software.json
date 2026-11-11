@@ -2,7 +2,7 @@
   "meta": {
     "description": "Research software developed at Imperial, from the Imperial Research Software Directory. Inclusion does not imply central RSE team involvement.",
     "source": "https://github.com/ImperialCollegeLondon/research-software-directory",
-    "generated": "2026-11-10",
+    "generated": "2026-11-11",
     "attributionNote": "Departments are inferred from the owning GitHub account or group using data/software-attributions.json and should be verified."
   },
   "software": [
@@ -26,6 +26,7 @@
         "clinical-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "UK Digital Heart Project",
         "confidence": "high"
@@ -51,6 +52,7 @@
         "clinical-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "UK Digital Heart Project",
         "confidence": "high"
@@ -74,6 +76,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": null,
         "confidence": null
@@ -102,6 +105,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -130,6 +134,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -155,6 +160,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -186,6 +192,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "medium"
@@ -211,6 +218,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "UK Biobank analysis",
         "confidence": "low"
@@ -236,6 +244,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -266,6 +275,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -291,6 +301,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -328,6 +339,7 @@
         "electrical-electronic-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Neural Reckoning group",
         "confidence": "medium"
@@ -359,6 +371,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -386,6 +399,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -411,6 +425,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -436,6 +451,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -461,6 +477,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -486,6 +503,7 @@
         "mechanical-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Coupled molecular–continuum simulation",
         "confidence": "low"
@@ -516,6 +534,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -549,6 +568,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "medium"
@@ -574,6 +594,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Systems and networking",
         "confidence": "low"
@@ -599,6 +620,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -624,6 +646,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Dyson Robotics Lab",
         "confidence": "high"
@@ -655,6 +678,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "medium"
@@ -686,6 +710,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -711,6 +736,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Vaccine Impact Modelling Consortium",
         "confidence": "high"
@@ -750,6 +776,7 @@
         "earth-science-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Devito project",
         "confidence": "high"
@@ -773,6 +800,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Computing Service",
         "confidence": "medium"
@@ -815,6 +843,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "medium"
@@ -847,6 +876,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -872,6 +902,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Barnes group",
         "confidence": "high"
@@ -897,6 +928,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -922,6 +954,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -947,6 +980,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -972,6 +1006,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Uncertainty quantification",
         "confidence": "low"
@@ -997,6 +1032,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "medium"
@@ -1026,6 +1062,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Dyson Robotics Lab",
         "confidence": "high"
@@ -1060,6 +1097,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational Optimisation Group",
         "confidence": "high"
@@ -1085,6 +1123,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Genomic epidemiology",
         "confidence": "medium"
@@ -1110,6 +1149,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "medium"
@@ -1135,6 +1175,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -1168,6 +1209,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -1193,6 +1235,7 @@
         "life-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Gilestro lab",
         "confidence": "high"
@@ -1223,6 +1266,7 @@
         "brain-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Skene lab",
         "confidence": "high"
@@ -1248,6 +1292,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -1277,6 +1322,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -1306,6 +1352,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -1331,6 +1378,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Firedrake project",
         "confidence": "high"
@@ -1359,6 +1407,7 @@
         "earth-science-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Applied Modelling and Computation Group",
         "confidence": "high"
@@ -1384,6 +1433,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Synthetic biology",
         "confidence": "medium"
@@ -1409,6 +1459,7 @@
         "clinical-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Cardiac genetics",
         "confidence": "low"
@@ -1442,6 +1493,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational Optimisation Group",
         "confidence": "high"
@@ -1467,6 +1519,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Astrophysics / GAMBIT collaboration",
         "confidence": "high"
@@ -1492,6 +1545,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -1517,6 +1571,7 @@
         "life-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Theoretical Systems Biology",
         "confidence": "medium"
@@ -1542,6 +1597,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational Optimisation Group",
         "confidence": "high"
@@ -1567,6 +1623,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Multicore Programming Group",
         "confidence": "high"
@@ -1592,6 +1649,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Firedrake project",
         "confidence": "high"
@@ -1617,6 +1675,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Barahona group",
         "confidence": "high"
@@ -1642,6 +1701,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Infectious disease modelling",
         "confidence": "low"
@@ -1667,6 +1727,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -1692,6 +1753,7 @@
         "electrical-electronic-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Control and Power",
         "confidence": "high"
@@ -1717,6 +1779,7 @@
         "metabolism-digestion-reproduction"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational and Systems Medicine",
         "confidence": "medium"
@@ -1748,6 +1811,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Turbulence simulation",
         "confidence": "high"
@@ -1781,6 +1845,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -1806,6 +1871,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -1836,6 +1902,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -1872,6 +1939,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Multicore Programming Group",
         "confidence": "high"
@@ -1904,6 +1972,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "medium"
@@ -1932,6 +2001,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "medium"
@@ -1960,6 +2030,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Software Reliability Group",
         "confidence": "high"
@@ -1990,6 +2061,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -2015,6 +2087,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -2040,6 +2113,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Numerical analysis",
         "confidence": "medium"
@@ -2078,6 +2152,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -2111,6 +2186,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -2136,6 +2212,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Space, Plasma and Climate",
         "confidence": "medium"
@@ -2161,6 +2238,7 @@
         "brain-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Skene lab",
         "confidence": "high"
@@ -2186,6 +2264,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -2218,6 +2297,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BioMedIA",
         "confidence": "high"
@@ -2243,6 +2323,7 @@
         "chemistry"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Department of Chemistry",
         "confidence": "high"
@@ -2268,6 +2349,7 @@
         "clinical-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRI data management",
         "confidence": "low"
@@ -2293,6 +2375,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Multicore Programming Group",
         "confidence": "high"
@@ -2318,6 +2401,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -2347,6 +2431,7 @@
         "metabolism-digestion-reproduction"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "National Phenome Centre",
         "confidence": "high"
@@ -2374,6 +2459,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -2399,6 +2485,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Vaccine Impact Modelling Consortium",
         "confidence": "high"
@@ -2424,6 +2511,7 @@
         "mechanical-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Morgans lab",
         "confidence": "high"
@@ -2449,6 +2537,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Synthetic biology",
         "confidence": "medium"
@@ -2474,6 +2563,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -2499,6 +2589,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Physics visualisations project",
         "confidence": "high"
@@ -2524,6 +2615,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Astrophysics / GAMBIT collaboration",
         "confidence": "high"
@@ -2552,6 +2644,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -2577,6 +2670,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -2602,6 +2696,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "medium"
@@ -2627,6 +2722,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "medium"
@@ -2655,6 +2751,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -2680,6 +2777,7 @@
         "mathematics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Firedrake / adjoint methods",
         "confidence": "medium"
@@ -2713,6 +2811,7 @@
         "mechanical-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Electrochemical science and engineering",
         "confidence": "low"
@@ -2738,6 +2837,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Vincent lab",
         "confidence": "high"
@@ -2763,6 +2863,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Software Performance Optimisation group",
         "confidence": "high"
@@ -2788,6 +2889,7 @@
         "earth-science-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Devito project",
         "confidence": "high"
@@ -2822,6 +2924,7 @@
       "metadataAvailable": true,
       "departments": [],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": null,
         "confidence": null
@@ -2853,6 +2956,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Bacterial genomics",
         "confidence": "low"
@@ -2878,6 +2982,7 @@
         "life-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Gilestro lab",
         "confidence": "high"
@@ -2901,6 +3006,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Software Engineering team",
         "confidence": "high"
@@ -2930,6 +3036,7 @@
         "design-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Robot Intelligence Lab",
         "confidence": "medium"
@@ -2953,6 +3060,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Software Engineering team",
         "confidence": "high"
@@ -2981,6 +3089,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -3004,6 +3113,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Computing Service",
         "confidence": "medium"
@@ -3027,6 +3137,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Computing Service",
         "confidence": "high"
@@ -3050,6 +3161,7 @@
       "metadataAvailable": false,
       "departments": [],
       "central": true,
+      "rseInvolved": false,
       "attribution": {
         "group": "Research Software Engineering team",
         "confidence": "high"
@@ -3075,6 +3187,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -3103,6 +3216,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -3140,6 +3254,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -3165,6 +3280,7 @@
         "life-sciences"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "SAFE Project",
         "confidence": "high"
@@ -3190,6 +3306,7 @@
         "electrical-electronic-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Speech and Audio Processing",
         "confidence": "high"
@@ -3220,6 +3337,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -3253,6 +3371,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -3278,6 +3397,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Loads Control and Aeroelastics Lab",
         "confidence": "high"
@@ -3303,6 +3423,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Software reliability",
         "confidence": "low"
@@ -3328,6 +3449,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -3361,6 +3483,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -3392,6 +3515,7 @@
         "physics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Quantum Photovoltaics group",
         "confidence": "medium"
@@ -3420,6 +3544,7 @@
         "bioengineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "BICV group",
         "confidence": "medium"
@@ -3445,6 +3570,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "MRC Centre for Global Infectious Disease Analysis",
         "confidence": "high"
@@ -3479,6 +3605,7 @@
         "materials"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Materials Design group",
         "confidence": "high"
@@ -3504,6 +3631,7 @@
         "chemistry"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Jelfs group",
         "confidence": "high"
@@ -3541,6 +3669,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational fluid dynamics",
         "confidence": "low"
@@ -3572,6 +3701,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Computational Optimisation Group",
         "confidence": "high"
@@ -3605,6 +3735,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -3630,6 +3761,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Software Performance Optimisation group",
         "confidence": "high"
@@ -3655,6 +3787,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Large-Scale Data & Systems group",
         "confidence": "high"
@@ -3697,6 +3830,7 @@
         "data-science-institute"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Data Science Institute",
         "confidence": "medium"
@@ -3722,6 +3856,7 @@
         "earth-science-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Coastal and ocean modelling",
         "confidence": "high"
@@ -3747,6 +3882,7 @@
         "design-engineering"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Robot Intelligence Lab",
         "confidence": "medium"
@@ -3772,6 +3908,7 @@
         "computing"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Biomedical Image Analysis",
         "confidence": "medium"
@@ -3797,6 +3934,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Loads Control and Aeroelastics Lab",
         "confidence": "high"
@@ -3822,6 +3960,7 @@
         "public-health"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Vaccine Impact Modelling Consortium",
         "confidence": "high"
@@ -3847,6 +3986,7 @@
         "aeronautics"
       ],
       "central": false,
+      "rseInvolved": false,
       "attribution": {
         "group": "Turbulence simulation",
         "confidence": "medium"
